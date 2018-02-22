@@ -1,0 +1,366 @@
+﻿CONTENT
+
+
+Home Page
+
+
+WEB SYSTEMS AND TECHNOLOGIES
+The elegance and beauty of the World Wide Web
+A site to observe and learn the uncovered facts and faces behind the World Wide Web.
+
+
+Purpose
+We will look to the many features of the Internet,How well it was constructed from history and such typical things that we don't know that works behind not just from the front of the monitor.
+
+
+Web Development
+The world as we know it has the consistency to have in mind that the world wide web is always at their side since it give as tons of information and ideas that is created to sites and web application,it has always been a value for us since it supports us for a long time now. It is a good sign that the Web is able to satisfy not only people but also companies that need services. It enables people to experience certain benefits and advantages in their daily lives.
+
+The Web has been harnessing and developing itself purposely for everyone to use.That’s why the World wide web is a great place for opportunities and innovation.This site shows things to consider when creating a website or application.
+
+
+A Crucial piece of composing a website is the creativity of the designed website and  its function.When creating a website,the first appearance will be recognized is the whole page with its design and that includes shapes,color,transitions ,effects and photos.Things like this are pieces that guides the vision of the user to see how creative a website it can be and attractive it could become to others too.Making it easy to navigate also helps steers the user to the whole website to see other looks of it. 
+
+
+The function and commands are far the most necessary quality of a website not for the users but for the developers too.Integrity of data flowing through the server-side and client-side is important to avoid destruction and disorganization.A practice that must be always keep in mind by developers or owners of the website are the privileges of their users like modification of data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+About Us
+* General Description of the group - As an Information Technology students 
+* Individual Description
+1. Venessa Antonio -
+2. Angelica Grabanzor -
+3. Albert Lacap -
+4. Stefanie Reyes -
+5. Gabriela Uy -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Prelim Notes
+What is Web Tech (Web Systems and Technology) ? - 
+
+
+
+
+What is WWW?
+* It stands for World Wide Web
+* The term is often mistakenly used as synonym for the Internet itself, but the web is a service that operates over the internet. 
+* It is a global information medium which users can read and write via computers connected to the Internet. 
+* In September 1994, Tim-Berners Lee, founded the World Wide Web Consortium (W3C) at the Massachusetts Institute of Technology with support from the Defense Advanced Research Projects Agency (DARPA) and the European Commission. It comprised various companies that were willing to create standards and recommendations to improve the quality of the web.
+
+
+WHAT IS HTTP?
+* It stands for HyperText Transfer Protocol
+*  Application layer used primarily to retrieve hypertext (on hypermedia) documents and resources on the World Wide Web.
+* Jointly developed by the W3C and the IETF.
+
+
+* HTTP VERSIONS
+1. HTTP 0.9  - 1991 only 3 methods (get,head,post)
+2. HTTP 1.0 - (RFC 1945, May 1996) all 8 methods.
+3. HTTP 1.1 - (RFC 2068 Jan 1997, RFC 2616 June 1999), RFC 7230-7235 (June 2014)
+4. HTTP 2 - (RFC 7540, May 2015)
+
+
+* HTTP Fundamentals
+1. HTTP typically runs on top of TCP/IP, using TCP port 80 by default or TCP port 443 for HTTPS (http over ssl/tls).
+2. HTTP is based on a client server architecture
+                        a. Clients   a.k.a User Agents(UA) such as:
+- Web browsers, web crawlers, email clients, other end user tools and applications. 
+                        b. Servers such as:
+* Origin servers,proxy servers, gateways, and  tunnels.
+        3.     HTTP uses a request-response standard protocol
+a.      The Client sends an HTTP request message to the server
+b.     The server processes the request and replies with an HTTP response message
+ 
+4.     HTTP is a stateless communication protocol
+a.      Servers do not keep information about clients in between requests
+B.   Web applications effect session tracking using mechanism such as cookies on URL-encoded session information to keep track of related client requests.
+5.     HTTP provides support for other functionalities such as
+a.      Cache control
+b.     Content media type (MIME) specifications
+c.      Language and character set specifications
+                         d.     Content/ transfer codings
+e.      Client-server protocol negotiations
+f.       Persistent connections
+g.      Request pipelining
+H.  Authentication/Authorization
+        *  Gateway connects two networks together
+    *  tunnels interconnection between two points
+    *  MIME types: “Text/plain” “text/html” “img/jpg”
+
+
+                6.   HTTP Resource addressing
+                        a. HTTP resources are identified using URIs (RFC 2396, RFC 3896) or more
+                        b.URLs (http/https)
+i.     Scheme (http: or https:)
+ii.     Authority
+1.     User/authentication information/ credentials 
+2.     Host 
+a.  Domain name (resource to an IP address using DNS) of the server where the resource resides (or while created)
+3.     Port number 
+iii.     Path to resource: resolved relative to the document root on the server 
+1.     May prefer to a static or dynamic resource
+iv.     Query 
+1.     Provides as key value pairs, with ampersand (&) separators between key/ value pairs
+2.     May be url encoded
+v.     Fragment identifier
+
+
+
+
+  
+
+
+
+
+
+* HTTP Request Message
+* Request Line (crlf terminated line consisting of the 3-spaced)
+* Message Headers (general, requests and or entity headers)
+* Empty Line 
+* Message Body
+
+
+
+
+* HTTP Response Message
+* Status Line
+* HTTP Protocol Version
+* Status Code
+* Reason Phrase
+* Response Headers
+* Empty Line
+* Message Body (Optional)
+
+
+* HTTP Request Methods
+1. GET
+* This method transfers a current selected representation of the resource identified by the Request URI.
+* It is the most commonly used HTTP Method
+2. HEAD
+* It is the same as the get method, except the entry is not included in the response.
+* It is used to retrieve metadata about entry implied by request without transferring the entity itself. 
+3. POST 
+* It performs resource about specific processing of the entities enclosed in the message body by the resource.
+4. PUT 
+* It stores the enclosed entity in the message body under the specified Request URI.
+5. DELETE 
+* By the term itself, it deletes data. 
+6. OPTIONS 
+* It requests information about the communication.
+7. TRACE 
+-It requests a loop-back of the request message.
+                         - It is typically used for testing/ diagnostics of the response chain.
+8. CONNECT 
+* It requests the establishment of a tunnel in the destination to the origin server. It is used for https.
+
+
+* HTTP Method Properties
+1. Safe Methods -  These methods ought to be considered "safe". This allows user agents to represent other methods, such as POST, PUT and DELETE.
+2. Idempotent Methods  - The methods GET, HEAD, PUT and DELETE share this property.
+* HTTP Extension Methods - Some extension methods of HTTP also includes: PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK, DESTINATION
+
+
+* HTTP Message Headers
+   * General Header Fields
+* Cache Control
+* Connection
+* Date
+* Pragma
+* Trailer
+* Transfer-encoding
+* Upgrade
+* Via
+* Warning
+   * Request Header Fields
+* Accept
+* Accept-charset
+* Accept-encoding
+* Accept-Language
+* Authorization
+* Expect
+* From
+* Host
+* If-match
+* If-modified-since
+* If-none-match
+* If-range
+* If-Unmodified-Since
+* Max-forward
+* Proxy-Authorization
+* Range
+* Referer
+* User-Agent
+   * Response Header Fields
+* Accept-Range
+* Age
+* E-Tag
+* Location
+* Proxy-Authenticate
+* Retry-After
+* Server
+* Vary
+* WWW-Authenticate
+   * Entity Header Fields
+* Allow
+* Content-encoding
+* Content-language
+* Content-length
+* Content-location
+* Content-MD5
+* Content-range
+* Content-type
+* Expires
+* Last Modified
+
+
+* HTTP STATUS CODE
+* Informal
+* 100 continue
+* 101 switching protocol
+* 102 processing (WebDAV)
+* Success
+* 200 OK
+* 201 created
+* 202 accept
+* 203 non – authoritative information
+* 204 no content
+* 205 reset content
+* 206 partial content
+* Redirect
+* 300 multiple choices
+* 301 moved permanently
+* 302 found
+* 303 see other
+* 304 not modified
+* 305 used proxy
+* 306 unused
+* 307 temporary redirect
+* Client Error
+* 400 bad request
+* 401 unauthorized 
+* 402 payment required
+* 403 forbidden
+* 404 not found
+* 405 method not allowed
+* 406 not acceptable
+* 407 proxy authentication
+* 408 request time – out
+* 409 conflict
+* 410 gone
+* 411 length required
+* 412 precondition failed
+* 413 request entity too large
+* 414 request URI too large
+* 415 unsupported media type
+* 416 request range not satisfiable
+* 417 expectation failed
+* 426 upgrade required
+* Server Error
+* 500 internal server error
+* 501 not implementation
+* 502 bad gateway
+* 503 service unavailable
+* 504 gateway time – out
+* 505 HTTP version not supported
+
+
+WHAT IS HTML?
+* It stands for Hypertext Markup Language
+* It’s role in modern web developments is to make the users throughout the world connected with the use of internet. 
+* It is use to create web pages or electronic documents that can be displayed on the World Wide Web. 
+
+
+HTML Versions
+* HTML 1.0 (1990)
+* HTML 2.0 -> RFC. 1866 (1995)
+* HTML 3.0 (The draft got expired and was not maintained well)
+   * 3.2 -> W3C Recommendation
+* HTML 4.0 (1997) 
+   * 4.01 (1999) -> introduce depreciation of representational elements and attributes in favor of style
+* HTML 5.0 latest and current version of HTML (2014)
+   * First draft of HTML5 was published in 2008 (Ian Hickson)
