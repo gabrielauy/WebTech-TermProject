@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Economica|Indie+Flower|Josefin+Slab|Kaushan+Script|Quattrocento|Pacifico|Dancing+Script|Open+Sans+Condensed:300|Play:700|Permanent+Marker|Lato|Titillium+Web|Libre+Baskerville|Satisfy');
+
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+p{
+	 font-size:160%;
+	 text-align:justify;
+	 margin:3%;
+	 font-family: 'Quattrocento', serif;
+}
+
+/*Start of parallax*/
+
+.inner1{
+	height:100%;
+	width:100%;
+	background-image:url("Untitled designvrevsdv.jpg");
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+.inner1_about{
+	background-color:#404040;
+	height:300px;
+	width:100%;
+	display:table;
+}
+
+.inner2{
+	height:100%;
+	width:100%;
+	background-image:url("28309012_1830640793663648_596352374_n (1).jpg");
+	background-size:cover;
+	background-attachment:fixed;
+	display:table;
+}
+
+.in2{
+	display:table-cell;
+	vertical-align:middle;
+	width:100%;
+	max-width:none;
+}
+
+.content2{
+	max-width:100%;
+	margin:auto;
+	text-align:center;
+}
+
+.content2 h1{
+	color:white;
+	font-family: 'Lato', sans-serif;
+	color:white;
+	font-size:90px;
+}
+
+.inner3{
+	height:100%;
+	width:100%;
+	background-image:url("bhbu.jpg");
+	background-size:cover;
+	background-attachment:fixed;
+	display:table;
+}
+
+.in3{
+	display:table-cell;
+	vertical-align:middle;
+	width:100%;
+	max-width:none;
+}
+
+.content3{
+	max-width:100%;
+	margin:auto;
+	text-align:center;
+}
+
+.content3 h1{
+	color:white;
+	font-family: 'Lato', sans-serif;
+	color:white;
+	font-size:90px;
+}
+
+.inner4{
+	height:100%;
+	width:100%;
+	background-image:url("Untitled designvrevsdv.jpg");/*Bes here mo ilagay url ng prelims main picture*/
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+/*End of parallax*/
+
+
+
+/*Navigation*/
+
+div.container
+{
+    margin: 0 auto;
+	padding-top:30px;
+	text-align: center;
+	/*position:fixed;
+	background-color:#808080;*/
+	width:100%;
+	max-width:100%;
+}
+
+div.container a
+{	
+	font-family: 'Josefin Slab', serif;
+	font-size:20px;
+    color: white;
+    text-decoration: none;
+    margin: 0px 0px;
+    padding: 5px 30px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+	text-align:left;
+}
+
+div.pullRight a:before
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: white;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullRight a:hover:before
+{
+    width: 100%;
+}
+
+/*End of Navigation*/
+
+/*Homepage*/
+
+.intro1{
+	background-image:url("image6.jpg");
+	background-size:cover;
+	max-width:100%;
+	max-height:100%;
+	margin-top:0;
+}
+
+
+
+#intro1_1{
+	text-align:center;
+	font-family: 'Dancing Script', cursive;
+	font-size:60px;
+	color:white;
+	padding-top:90px;
+	line-height:0;
+}
+
+#intro1_2{
+	font-size:30px;
+	text-align:center;
+	font-family: 'Josefin Slab', serif;
+	color:white;
+	line-height:28px;
+	padding-bottom:70px;
+	
+}
+.intro2{
+	float:left;
+	height:200px;
+	margin-left:100px;
+	height:350px;
+}
+
+
+#intro2_1{
+	font-family: 'Titillium Web', sans-serif;
+	font-size:25px;
+	line-height:0;
+	color:#261a0d;
+}
+
+#intro2_2{
+	font-family: 'Libre Baskerville', serif;
+	font-size:40px;
+	color:#B8860B;
+}
+
+.intro3{
+	float:right;
+	height:350px;
+	margin-right:100px;
+	width:500px;
+}
+
+#intro3_quotes{
+	font-size:25px;
+	quotes:"\201C""\201D""\2018""\2019";
+	padding:10px 20px;
+	line-height:1.4;
+	color:#261a0d;
+}
+
+#intro3_quotes:before{
+	content:open-quote;
+	display: inline;
+	height: 0;
+	line-height: 0;
+	left: -10px;
+	position: relative;
+	top: 30px;
+	color: #B8860B;
+	font-size: 3em;
+}
+
+#intro3_quotes:after {
+  content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: 10px;
+  position: relative;
+  top: 35px;
+  color: #B8860B;
+  font-size: 3em;
+}
+
+#intro3_footer{
+  margin:0;
+  text-align: right;
+  font-size: 1.5em;
+  font-style: italic;
+  color:#261a0d;
+}
+
+.intro4{
+	clear:both;
+	margin:80px;
+	padding:15px;
+}
+
+.intro4_pp{
+	text-indent:50px;
+	color:#261a0d;
+}
+
+#intro4_p{
+	color:#261a0d;
+}
+
+#intro4_p:first-child:first-letter {
+  color:#B8860B ;
+  float: left;
+  font-family: Georgia;
+  font-size: 80px;
+  line-height: 50px;
+  padding-top: 4px;
+  padding-right: 10px;
+  padding-left: 3px;
+}
+
+/* This is for the lessons icon with link on the Homepage */
+
+#lessonscont{
+	width:100%;
+	height:auto;
+	margin-top:10px;
+}
+
+img.lessons{
+	width: 95%;
+	height: 95%;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.lessonscontainer{
+	max-width:300px;
+	height: 270px;
+	position: relative;
+    width: 100%;
+    margin: 50px;  
+    display:inline-block;
+    -moz-box-shadow: 0 0 0 4px #261a0d, 2px 1px 4px 4px rgba(10,10,0,.5);
+    -webkit-box-shadow: 0 0 0 4px #261a0d, 2px 1px 4px 4px rgba(10,10,0,.5);
+    box-shadow: 0 0 0 4px #261a0d, 2px 1px 6px 4px rgba(10,10,0,.5);
+}
+
+.lessonscontainer:hover{
+	 -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
+/*end of lessons icon with link*/
+/*End of Homepage*/
+
+/*About page*/
+.About_header{
+	background-color:#261a0d;
+	width:100%;
+	height:100px;
+	display:table;
+}
+
+.About_head{
+	display:table-cell;
+	vertical-align:middle;
+	width:100%;
+	max-width:none;
+}
+
+.About_head_content{
+	max-width:100%;
+	margin:auto;
+	text-align:center;
+}
+
+.About_head_content h1{
+	color:white;
+	font-family: 'Titillium Web', sans-serif;
+	font-size:80px;
+}
+
+nav{
+	background-color:#261a0d;
+	width:100%;
+	height:80px;
+	opacity:0.5;
+	position:fixed;
+}
+
+.About_intro{
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:20%;
+	margin-right:20%;
+	padding:30px;
+}
+
+#aboutintro_heading{
+	text-align:Center;
+	font-size:50px; 
+	font-family: 'Quattrocento', serif;
+	text-transform:uppercase;
+	color:#261a0d;
+}
+
+#aboutintro_p{
+	font-family: 'Quattrocento', serif;
+	line-height:50px;
+	text-indent:30px;
+	color:#261a0d;
+}
+
+/* About page - This is for the member profile*/
+
+#developers{
+	width:100%;
+	height:auto;
+	margin-top:20px;
+}
+
+img.developer {
+	text-align: center;
+	width: 95%;
+	height: 95%;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.about_container{
+	max-width:300px;
+	height: 270px;
+	
+    width: 100%;
+    margin: 50px;  
+    display:inline-block;	
+	font-family: 'Satisfy', cursive;
+	color:#261a0d;
+}
+
+}
+.about_container h3{
+	font-size: 15px;
+	font-weight: bold;
+	text-align:center;
+}
+
+.about_container p{
+	font-size:15px;
+	font-family: 'Quattrocento', serif;
+	line-height:20px;
+	color:#261a0d;
+}
+
+/*end of member profile*/
+
+/*End of Aboutpage*/
+
+/*Prelims*/
+#prelimsnav{
+	background-color:#261a0d;
+	opacity:0.5;
+	position:fixed;
+}
+/*End of prelims*/
+
+#midterms{
+	height:45%;
+}
+
+#finals{
+	height:45%;
+}
+
+/*Footer*/
+footer{
+	background-color:#261a0d;
+	height:180px;
+}
+
+footer p{
+	text-align:center;
+	color:white;
+	padding:50px;
+}
+/*End of footer*/
+
+ 
+ 
