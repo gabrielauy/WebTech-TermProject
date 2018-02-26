@@ -372,3 +372,59 @@ HTML Versions
    * 4.01 (1999) -> introduce depreciation of representational elements and attributes in favor of style
 * HTML 5.0 latest and current version of HTML (2014)
    * First draft of HTML5 was published in 2008 (Ian Hickson)
+
+Extensible Hypertext Markup Language 
+Reformulation of HTML in XML 
+Versions 
+XHTML 1.0 
+XHTML 1.1 
+XHTML 1.2 
+XHTML 2.0 
+XHTML 5 
+Basic differences between HTML and XHTML 
+All elements have beginning and ending tags 
+All elements are nested properly 
+Elements and attribute names are case sensitive (lowercase) 
+Attribute values are quoted) 
+Attribute values cannot be minimized 
+XHTML Document Components 
+Document Type Declaration (DOCTYPES) 
+HTML 4.01 DOCTYPES 
+XHTML 1.0 DOCTYPES 
+Elements 
+Tags 
+Content (elements)
+KINDS OF CONTENT
+Void elements
+ Area, Base, br, col, embbed, img, input, link, meta, param, source, travk, wbr
+Template Elements
+Raw Text Element
+- script, style
+Escalable Raw Text element 
+Text area, title
+Attributes and Attribute Values
+Global Attributes
+id, class, title, alt, lang, dir, tab index, draggable, spell check, hidden, style, accesskey, href
+Custom Non-Visible Data Attributes
+
+
+data-toggle
+data-html
+data-content
+Character Entity References 
+&lt; &gt; &amp; &nbsp; &shy;
+
+XHTML Elements 
+Block-level and inline (aka text-level) elements 
+Block-level elements represent “larger” document structures and may contain inline & other block level elements 
+Inline elements contain only data and other inline elements 
+Author Styles 
+External style sheets (recommended) 
+Embedded styles 
+Inline styles 
+User Style 
+User Agent Style (example default style sheet for HTML 4) 
+Quirks 
+Older ways of rendering documents 
+Standards 
+ Following the specification by W3C for HTML, CSS
