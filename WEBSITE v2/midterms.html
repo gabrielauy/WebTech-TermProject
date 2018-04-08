@@ -81,17 +81,29 @@
 
  						<div id ="header">
  						<h2> CSS Selectors </h2> </div>
- 						<li> specify which element you want to edit 
- 						<li><strong>Selector</strong> - used as a condition in a CSS rule
- 						<li> <strong>Selector Syntax</strong> - chain of one or more sequences of simple selectors and always start with type selector  and universal selector
- 						<li> SIMPLE SELECTOR
+ 						<li> Specify which element you want to edit. 
+ 						<li><strong>Selector</strong> - used as a condition in a CSS rule to determine which elements in the document tree.
+ 						<li> <strong>Selector Syntax</strong> - chain of one or more sequences of simple selectors separated by combinators, with one pseudo-element, possibly appended to the last sequence and always start with type selector  and universal selector.
+ 						<li> <strong>Selector Group</strong> - comma-separated list of selectors representing the union of all elements selected by each of the selectors in the list.
+ 						<li> <strong>SIMPLE SELECTOR</strong>
  						<ul>
- 							<li> type
- 							<li> universal
- 							<li> attribute
+ 							<li> Type selectors
+ 							<li> ID selectors
+ 							<li> Class selectors
+ 							<li> Universal selectors
+ 							<li> Attribute selectors
  							<br> &emsp;&emsp;&emsp;&emsp;&#9657;[attribute=value] ->> Selects all elements with target="_blank"
- 							<br> &emsp;&emsp;&emsp;&emsp;&#9657;[attribute~=value] ->> Selects all elements with a title attribute containing the value you &emsp;&emsp;&emsp;&emsp;put inside the attribute
+ 							<br> &emsp;&emsp;&emsp;&emsp;&#9657;[attribute~=value] ->> Selects all elements with a title attribute containing the value you put inside the attribute
  							<br> &emsp;&emsp;&emsp;&emsp;&#9657;[attribute !=value] ->> Select elements that either don't have the specified attribute
+ 							<li> Pseudo - classes 
+ 							<br> &emsp;&emsp;&emsp;&emsp;&#9657; Dynamic pseudo-classes ( e.g., :link , :visited )
+ 							<br> &emsp;&emsp;&emsp;&emsp;&#9657; User-action pseudo-classes ( e.g., :hover , :active , :focus )
+ 							<br> &emsp;&emsp;&emsp;&emsp;&#9657; Target pseudo-classes ( e.g., :target )
+ 							<br> &emsp;&emsp;&emsp;&emsp;&#9657; Language pseudo-classes ( e.g., :langc )
+ 							<br> &emsp;&emsp;&emsp;&emsp;&#9657; UI element states pseudo-classes ( e.g., :enabled , :disabled , :checked , :indeterminate )
+ 							<br> &emsp;&emsp;&emsp;&emsp;&#9657; Structural pseudo-classes ( e.g., :root , :first-child , :last-child , :only-child , :nth-child() :nth-last-child() , :first-of-type , :last-of-type , :only-of-type , :empty , :nth-of-type() , :nth-last-of-type() )
+ 							<br> &emsp;&emsp;&emsp;&emsp;&#9657; Pseudo-elements ( e.g., :first-letter , ::first-letter , :before , ::before )
+ 							<li> Combinators
  						</ul>
 
  						<hr>
