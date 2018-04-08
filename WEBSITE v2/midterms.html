@@ -103,59 +103,81 @@
  							<br> &emsp;&emsp;&emsp;&emsp;&#9657; UI element states pseudo-classes ( e.g., :enabled , :disabled , :checked , :indeterminate )
  							<br> &emsp;&emsp;&emsp;&emsp;&#9657; Structural pseudo-classes ( e.g., :root , :first-child , :last-child , :only-child , :nth-child() :nth-last-child() , :first-of-type , :last-of-type , :only-of-type , :empty , :nth-of-type() , :nth-last-of-type() )
  							<br> &emsp;&emsp;&emsp;&emsp;&#9657; Pseudo-elements ( e.g., :first-letter , ::first-letter , :before , ::before )
- 							<li> Combinators
+ 							<li> <strong>Combinators</strong>
+							<br> &emsp;&emsp;&emsp;&emsp;&#9657; <strong>Descendant combinator </strong>( i.e., whitespace , space , tab , line feed , carrige , retum , form feed )
+							<br> &emsp;&emsp;&emsp;&emsp;&#9657; <strong>Child combinator (>) </strong>
+							<br> &emsp;&emsp;&emsp;&emsp;&#9657; <strong>Sibling combinator </strong>
  						</ul>
 
  						<hr>
 
 
-                        <div id ="header">
+			<div id ="header">
                         <h2> CSS Rule Precedence </h2> </div> 
-                        <li> CSS Rule Precedence - From highest to lowest priority
+                        <li> <strong>CSS Rule Precedence</strong> - From highest to lowest priority and an HTML element may be the subject of the selectors of multiple style rules.
+                        <br> &emsp;&emsp;&emsp;&emsp;&#9657; when such rules target different properties, their effects cascade (i.e., are combined )
+                        <br> &emsp;&emsp;&emsp;&emsp;&#9657; when the styles involve the same property, they conflict and must be resolved such that only one style is applied.
                         <ul>
-                        	<li> By origin and importance
+                        	<li><strong> By origin and importance</strong>
                         		<br> &emsp;&emsp;&emsp;&emsp;&#9657;user agent important declarations
                         		<br> &emsp;&emsp;&emsp;&emsp;&#9657;user importance declorations
                         		<br> &emsp;&emsp;&emsp;&emsp;&#9657;author important declarations
                         		<br> &emsp;&emsp;&emsp;&emsp;&#9657;author normal declarations
                         		<br> &emsp;&emsp;&emsp;&emsp;&#9657;user normal declorations
                         		<br> &emsp;&emsp;&emsp;&emsp;&#9657;user agent normal declarations
-                        	<li>By specificity- The higer the priority
+                        	<li><strong>By specificity</strong>- The higer the priority
                         		<br> &emsp;&emsp;&emsp;&emsp;&#9657;Inline Style
                         		<br> &emsp;&emsp;&emsp;&emsp;&#9657;Number of ID selectors
                         		<br> &emsp;&emsp;&emsp;&emsp;&#9657;Number of class selectors, attribute selectors, pseudo-class
                         		<br> &emsp;&emsp;&emsp;&emsp;&#9657;Number of type selectors & pseudo-elements
-                        	<li> By order - If it comes later, it goes first.
+                        	<li> <strong>By order</strong> - If it comes later, it goes first.
                         </ul>
 
                         <hr>
 
                         <div id ="header">
                         <h2> CSS Declarations </h2> </div>
-                        <li>Properties
+                        <li><strong>Properties</strong>
                         <ul>
                         	<li>Shorthand Properties
+                        	<li>allows authors to specify (e.g., border-width)
                         	<li>vendor specific extensions (a.k.a. vendor prefixes)
+                        	<br> &emsp;&emsp;&emsp;&emsp;&#9657; used by browser vendors as a prefix for the names of experimental or non-standard CSS properties. (e.g., -webkit- , -moz- , -o- , -ms-)
+                        	<br> &emsp;&emsp;&emsp;&emsp;&#9657; custom properties a.k.a, CSS variables (experimental). Property names prefixed with <strong>"- -"</strong>, representing a value.
                         </ul>
-                        <li>Values
+                        <li><strong>Values</strong>
                         	<ul>
-                        		<li>keywords
+                        		<li><strong>keywords</strong>
 								<li>numbers(integers & reals indecimal notation)
-								<li>dimensions
+								<li><strong>value processing</strong>
+								<br> &emsp;&emsp;&emsp;&emsp;&#9657; declared, cascade, specified, computed, used, actual values.
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; Value types - Keywords (CSS wide keywords (e.g., initial , inherit, unset) , property-specific keywords)
+								<li><strong>dimensions</strong>
 									<br>&emsp;&emsp;&emsp;&emsp;&#9657;length, angle, duration, frequency, resolution
-								<li>length units:
+								<li><strong>length units:</strong>
 									<br>&emsp;&emsp;&emsp;&emsp;&#9657;font relative: em, ex, ch, rem
 									<br>&emsp;&emsp;&emsp;&emsp;&#9657;viewport precentage: vw, vh, vmin, vmax
-								<li>absolute lengths: cm, mm q, in, pt ,pc ,px
-								<li>angle units: deg, grad, rad, turn
-								<li>duration units:  s, ms
-								<li>frequency units: hz, khz
-								<li>resolution units: dpi, dpem, dppx
-								<li>percentages
-								<li>URLs and URIs
-								<li>colors
-								<li>strings
-								<li>functions: calc(), attr(), counter(), counters(), linear-gradient(), radial-gradient(), translate(), scale(), rotate()
+								<li><strong>absolute lengths</strong>: cm, mm q, in, pt ,pc ,px
+								<li><strong>angle units</strong>: deg, grad, rad, turn
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; used in some gradient and transform functions
+								<li><strong>duration units</strong>:  s, ms
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; used in animation, transition, and related properties
+								<li><strong>frequency units</strong>: hz, khz
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; usually introduced in CSS2 for the (obsoleted) aural media type: reintroduced in CSS3 but currently unused.
+								<li><strong>resolution units</strong>: dpi, dpem, dppx
+								<li><strong>percentages</strong>
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; number with a % suffix
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; calculated as a percentage of some value (usually taken from the parent-element) 
+								<li><strong>URLs and URIs</strong>
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; URL() function with an absolute or relative (to the stylesheet) URL parameter
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; denotes a pointer to a resource, such as an image or a font.
+								<li><strong>colors</strong>
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; color keywords: red, blue, white, etc.
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; RGB hexadecimal notation: #fff , #f00 , #f00f, etc.
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; RGB functions: rgb(255,0,0) , HSL functions: hsl(0,100%,50%) or hsla (0,100%,50%,1), Currentcolor: transparent
+								<li><strong>strings</strong>
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; delimited by single quotes (') or double qoutes(")
+								<li><strong>functions</strong>: calc(), attr(), counter(), counters(), linear-gradient(), radial-gradient(), translate(), scale(), rotate()
                         	</ul>
 
                         <hr>
@@ -171,11 +193,13 @@
 		  					<ul>
 		  						<li>provides functionality without having to write CSS.
 		  						<li>Set of codes already provided by other users which other developers can use in developing their website.
+								<li>provides predefined CSS design functionality that can be reused, extended, or customized (e.g., bootstrap, materialize, etc.)
 		  					</ul>
 		  				<li>Polyfills
 		  					<ul>
 		  						<li>allows users/developers to make use of the features of the browsers.
 		  						<li>provides features that developers expect browsers to provide natively.
+								<br>&emsp;&emsp;&emsp;&emsp;&#9657; E.g., modernizr, selectivizr, etc.
 		  					</ul>
 		  		</div>
 
