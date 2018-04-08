@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<title>Midterms</title>
+		<link rel="icon" href="images/Logo.png">
+		<link rel ="stylesheet" type="text/css" href="style/style2.css"> 
+	</head>
+	
+	<body>
+		
+		<section class ="inner1">
+			<nav>
+				<div class="container color pullRight">
+				<a href ="index.html">HOME</a>
+				<a href="about.html">ABOUT US</a>
+				<a href="prelims.html">PRELIM</a>
+				<a href="midterms.html">MIDTERM</a>
+				<a href="finals.html">FINAL</a>
+				</div>
+			</nav>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			            <a href="#midcont"><img class="arrow" src="images/arrow.png" alt="arrow-down"></a>
+		</section>
+
+
+		
+		<section id="midcont">
+			<div class="CSS">
+				<h2>Cascading Style Sheet</h2>
+
+				<main>
+                <div id="wrapper">
+                	<div id ="header">
+                        <h2> What is CSS?</h2> </div>
+                    <ul>
+                        <li>
+                             It is developed by Hakon Wium Lee (LHSS) & Bert Bos (JOP)
+                        </li>
+                        <li>
+                        	It is a language used to specify the presentation (e.g.,layout,formatting,fonts, colors, etc.)of structurally marked up documents (e.g., HTML,XML,SVG,MathMl, etc.)
+                        <li>It is used to specify how websites/documents are displayed/presented.
+                        <hr>
+
+                        <div id = "header">
+                        <h2> CSS Version History </h2> </div>
+                        <li>CSS Level 2 (CSS 2, W3C Recommendation, May 1998)
+                        <li>CSS Level 2.1 Revision 1 (CSS 2.1, W3C Recommendation, Jun 2011)
+                        <li>CSS Level 3
+                        <li>Modular approach to CSS development(as opposed to the monolithic specification of CSS 2.1)
+                        <hr>
+
+
+                        <div id = "header">
+                        <h2> HTML Style Sheets </h2> </div>
+                        <li>Sources of styles for HTML documents
+                        <ul>
+                        	<li><strong>Author Styles</strong>
+                        	<br> &#9657;external (a.k.a linked) stylesheets (recommended)
+                        	<br> &#9657;Embedded (a.k.a internal) stylesheets
+                        	<br> &#9657;Inline styles
+                        	<li><strong>User Styles</strong>
+                        	<br> &#9657;Some browsers provide (non-standard)alternatives through plugins extensions (e.g., Stylish)
+                        	<li><strong>User Agent Styles</strong>
+                        	<br> &#9657;Sample default user agent stylesheet from CSS 2.1
+                        </ul>
+                        <li>The source of a style denotes its origin, which is used in determining its precedence in the cascade.
+
+                        <hr>
+
+                        <div id ="header">
+                        <h2> CSS Statements </h2> </div>
+                        <li>@charset- character encoding scheme for mapping
+ 						<li>@import- import other documents
+ 						<li>@namespace- targets other documents
+ 						<li>@document- stylesheet only applies to documents in specific page
+ 						<li>@font-face- web donloadable files
+ 						<li>@key frames- CSS animation
+ 						<li>@media- responsive design
+
+ 						<hr>
+
+ 						<div id ="header">
+ 						<h2> CSS Selectors </h2> </div>
+ 						<li> specify which element you want to edit 
+ 						<li><strong>Selector</strong> - used as a condition in a CSS rule
+ 						<li> <strong>Selector Syntax</strong> - chain of one or more sequences of simple selectors and always start with type selector  and universal selector
+ 						<li> SIMPLE SELECTOR
+ 						<ul>
+ 							<li> type
+ 							<li> universal
+ 							<li> attribute
+ 							<br> &emsp;&emsp;&emsp;&emsp;&#9657;[attribute=value] ->> Selects all elements with target="_blank"
+ 							<br> &emsp;&emsp;&emsp;&emsp;&#9657;[attribute~=value] ->> Selects all elements with a title attribute containing the value you &emsp;&emsp;&emsp;&emsp;put inside the attribute
+ 							<br> &emsp;&emsp;&emsp;&emsp;&#9657;[attribute !=value] ->> Select elements that either don't have the specified attribute
+ 						</ul>
+
+ 						<hr>
+
+
+                        <div id ="header">
+                        <h2> CSS Rule Precedence </h2> </div> 
+                        <li> CSS Rule Precedence - From highest to lowest priority
+                        <ul>
+                        	<li> By origin and importance
+                        		<br> &emsp;&emsp;&emsp;&emsp;&#9657;user agent important declarations
+                        		<br> &emsp;&emsp;&emsp;&emsp;&#9657;user importance declorations
+                        		<br> &emsp;&emsp;&emsp;&emsp;&#9657;author important declarations
+                        		<br> &emsp;&emsp;&emsp;&emsp;&#9657;author normal declarations
+                        		<br> &emsp;&emsp;&emsp;&emsp;&#9657;user normal declorations
+                        		<br> &emsp;&emsp;&emsp;&emsp;&#9657;user agent normal declarations
+                        	<li>By specificity- The higer the priority
+                        		<br> &emsp;&emsp;&emsp;&emsp;&#9657;Inline Style
+                        		<br> &emsp;&emsp;&emsp;&emsp;&#9657;Number of ID selectors
+                        		<br> &emsp;&emsp;&emsp;&emsp;&#9657;Number of class selectors, attribute selectors, pseudo-class
+                        		<br> &emsp;&emsp;&emsp;&emsp;&#9657;Number of type selectors & pseudo-elements
+                        	<li> By order - If it comes later, it goes first.
+                        </ul>
+
+                        <hr>
+
+                        <div id ="header">
+                        <h2> CSS Declarations </h2> </div>
+                        <li>Properties
+                        <ul>
+                        	<li>Shorthand Properties
+                        	<li>vendor specific extensions (a.k.a. vendor prefixes)
+                        </ul>
+                        <li>Values
+                        	<ul>
+                        		<li>keywords
+								<li>numbers(integers & reals indecimal notation)
+								<li>dimensions
+									<br>&emsp;&emsp;&emsp;&emsp;&#9657;length, angle, duration, frequency, resolution
+								<li>length units:
+									<br>&emsp;&emsp;&emsp;&emsp;&#9657;font relative: em, ex, ch, rem
+									<br>&emsp;&emsp;&emsp;&emsp;&#9657;viewport precentage: vw, vh, vmin, vmax
+								<li>absolute lengths: cm, mm q, in, pt ,pc ,px
+								<li>angle units: deg, grad, rad, turn
+								<li>duration units:  s, ms
+								<li>frequency units: hz, khz
+								<li>resolution units: dpi, dpem, dppx
+								<li>percentages
+								<li>URLs and URIs
+								<li>colors
+								<li>strings
+								<li>functions: calc(), attr(), counter(), counters(), linear-gradient(), radial-gradient(), translate(), scale(), rotate()
+                        	</ul>
+
+                        <hr>
+
+
+                        <div id ="header">
+                        <h2>CSS Preprocessors, Frameworks and Polyfills</h2> </div>
+                        <li>Preprocessors
+                        	<ul>
+                        	<li>generates CSS using a custom language syntax that typically includes features that don't exist
+		  					in pure CSS </ul>
+		  				<li> CSS Frameworks
+		  					<ul>
+		  						<li>provides functionality without having to write CSS.
+		  						<li>Set of codes already provided by other users which other developers can use in developing their website.
+		  					</ul>
+		  				<li>Polyfills
+		  					<ul>
+		  						<li>allows users/developers to make use of the features of the browsers.
+		  						<li>provides features that developers expect browsers to provide natively.
+		  					</ul>
+		  		</div>
+
+
+
+
+		  	</main>
+
+
+		  		<div class="CSS">
+				<h2> JavaScript (JS) Execution Environment</h2></div>
+
+  				
+
+<div id="toc_container">
+<p class="toc_title">Contents</p>
+<ul class="toc_list">
+<li><a href="#First_Point_Header">What is JavaScript??</a></li>
+<li><a href="#Second_Point_Header">DOM</a></li>
+<li><a href="#Third_Point_Header">BOM</a></li>
+</ul>
+</div>
+    
+
+
+</section>
+		
+
+
+
+
+
+
+
+
+
+
+		<footer>
+			<p>
+			
+			<a href="">
+			<img id="insta" src="images/Instagram.png" width="35" height="35" alt="insta"></a>
+			
+			<a href="">
+			<img id="twitter" src="images/Twitter.png" width="35" height="35" alt="twitter"></a>
+			
+			<a href="">
+			<img id="fb" src="images/Facebook.png" width="35" height="35" alt="fb"></a>
+			
+			<a href="">
+			<img id="weheart" src="images/Github.png" width="35" height="35" alt="weheart"></a>
+			
+			<br>All rights reserved &copy;</p>	
+		</footer>
+		
+	</body>
+</html>
