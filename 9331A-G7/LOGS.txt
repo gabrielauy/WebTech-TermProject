@@ -1,0 +1,172 @@
+Author: lacapalbert22 <lacapalbert22@gmail.com>
+Date:   Mon Apr 9 15:38:42 2018 +0800
+
+    Me added Content'
+
+commit 3242240fa2776c7107d3c122b0dab966a958b6f4
+Author: gabrielauy <34189836+gabrielauy@users.noreply.github.com>
+Date:   Mon Apr 9 13:39:33 2018 +0800
+
+    uploaded additional picture for Javascript
+
+commit a92946a431952f52a5093597026dbd8f400e076c
+Author: Stef1897 <stefreyess1897@gmail.com>
+Date:   Mon Apr 9 13:34:43 2018 +0800
+
+    Edited css for midterms page
+
+commit 6ddfea84ae4feef4faa65d7f1e78d802d40ac2d3
+Author: Stef1897 <stefreyess1897@gmail.com>
+Date:   Mon Apr 9 13:33:33 2018 +0800
+
+    Edited midterms.html
+
+    added JavaScript content
+
+commit 3629a059009c4a1c47eb422d583e074d04c17f15
+Author: venessantonio <35622942+venessantonio@users.noreply.github.com>
+Date:   Sun Apr 8 21:31:49 2018 +0800
+
+    added notes under CSS declarations,RulePrecedence,se
+
+    under CSS declarations, CSS rule precedence, and CSS selectors
+
+commit 6ed64085f5b53502ea1b16ff45c12879eaa91252
+Author: venessantonio <35622942+venessantonio@users.noreply.github.com>
+Date:   Sun Apr 8 18:13:44 2018 +0800
+
+    added contents in under CSS Selectors
+
+commit 9d0316596b4d7fa78b8f400ace4af5ea93cedfc0
+Author: venessantonio <35622942+venessantonio@users.noreply.github.com>
+Date:   Sun Apr 8 18:08:08 2018 +0800
+
+    uploaded the final-notes.jpg
+
+commit 4de3daf5e3a69090abbebe35585b97450acecd41
+Author: gabrielauy <34189836+gabrielauy@users.noreply.github.com>
+Date:   Sun Apr 8 18:05:27 2018 +0800
+
+    Added additional picture
+
+commit e93492120577fdbf0f0807730875360643181a9f
+Author: venessantonio <35622942+venessantonio@users.noreply.github.com>
+Date:   Sun Apr 8 18:02:19 2018 +0800
+
+    added some contents
+
+commit 507f3315f4605bad278ce0a95b5655db38dcc5b6
+Author: gabrielauy <34189836+gabrielauy@users.noreply.github.com>
+Date:   Sun Apr 8 17:59:53 2018 +0800
+
+    Deleted unnecessary file
+
+commit 2c0afd6468fcce5dfd66a084369adef802474a87
+Author: gabrielauy <34189836+gabrielauy@users.noreply.github.com>
+Date:   Sun Apr 8 17:59:30 2018 +0800
+
+    Deleted unnecessary file
+
+commit 872de5468383d3d3ba2866beada080f664e3d0fa
+Author: gabrielauy <34189836+gabrielauy@users.noreply.github.com>
+Date:   Sun Apr 8 17:58:32 2018 +0800
+
+    Add files via upload
+
+commit 9c673e777cac4849bcbfb4f5987a3879a2784846
+Author: gabrielauy <34189836+gabrielauy@users.noreply.github.com>
+Date:   Sun Apr 8 17:57:48 2018 +0800
+
+    Created Styles folder
+
+commit 6ff1e464b5ccf3c2097000eab6362595d8308b6d
+Author: gabrielauy <34189836+gabrielauy@users.noreply.github.com>
+Date:   Sun Apr 8 17:57:12 2018 +0800
+
+    uploaded images
+
+commit 823d65d598974a34d446b675778482a63da9bf52
+Author: gabrielauy <34189836+gabrielauy@users.noreply.github.com>
+Date:   Sun Apr 8 17:56:04 2018 +0800
+
+    Created images folder
+
+commit 275ee9bdfc5e5565f20734f6f1afb63835506916
+Author: gabrielauy <34189836+gabrielauy@users.noreply.github.com>
+Date:   Sun Apr 8 17:52:10 2018 +0800
+
+    uploaded all the html pages
+
+commit e873450f7e20b101395a00c7a041cb061f1df7ed
+Author: gabrielauy <34189836+gabrielauy@users.noreply.github.com>
+Date:   Sun Apr 8 17:51:20 2018 +0800
+
+    Created WEBSITE V2 folder
+
+commit 1c337255d41f5c27ac1ab3c962886587dcda1a7e
+Author: venessantonio <35622942+venessantonio@users.noreply.github.com>
+Date:   Sun Apr 8 13:49:43 2018 +0800
+
+    Added content for midterms
+
+commit 4f4bcfc47f31caaa72eea8f2fcf36b5eadb76f15
+Author: lacapalbert22 <lacapalbert22@gmail.com>
+Date:   Mon Feb 26 15:01:47 2018 +0800
+
+    term project latest jupdate
+
+commit 7fd7383a38bedfa12bd9dd31d3b28e88f517dcda
+Author: lacapalbert22 <lacapalbert22@gmail.com>
+Date:   Mon Feb 26 14:34:04 2018 +0800
+
+    remove logo folder
+
+commit cbe81b9e105ed33c81c4d5e2d1bdead27843277a
+Author: lacapalbert22 <lacapalbert22@gmail.com>
+Date:   Mon Feb 26 13:27:59 2018 +0800
+
+    added contents for content.txt
+
+commit 29b9d7ecfc9801ed06146237b2573d2210ea8cde
+Author: lacapalbert22 <lacapalbert22@gmail.com>
+Date:   Mon Feb 26 13:26:18 2018 +0800
+
+    added additional content for content.txt
+
+commit 2d3d51ecd7ebde55fdc4ca6f1f6662db0d51bddb
+Author: jellyaace <36072662+jellyaace@users.noreply.github.com>
+Date:   Sun Feb 25 03:00:40 2018 +0800
+
+    Updated the website design and contents
+
+commit 71f1e95642540121a8e3a89a64644c0fb82f5d0c
+Author: lacapalbert22 <lacapalbert22@gmail.com>
+Date:   Sat Feb 24 18:03:11 2018 +0800
+
+    added updated version of website
+
+commit 6259a774ceb1fc270cd26f7a61f57717c5a83c16
+Author: venessantonio <35622942+venessantonio@users.noreply.github.com>
+Date:   Fri Feb 23 01:37:17 2018 +0800
+
+    Uploaded content for prelim
+
+commit 1fd59008a9ed66c117637a8262f6321d9a11cb31
+Author: venessantonio <35622942+venessantonio@users.noreply.github.com>
+Date:   Thu Feb 22 20:51:26 2018 +0800
+
+    Uploaded the web resources
+
+commit 51fa50b5928ce652c975dfe6767d4df51311ef14
+Author: gabrielauy <34189836+gabrielauy@users.noreply.github.com>
+Date:   Thu Feb 22 20:30:41 2018 +0800
+
+    uploaded the README.txt
+
+    contains detailed instructions on how to set up the website in order for its contents to be accessed
+
+commit 3001a0f8a16ae42a205c66cd7f44b6960fcf5455
+Author: gabrielauy <34189836+gabrielauy@users.noreply.github.com>
+Date:   Thu Feb 22 20:00:20 2018 +0800
+
+    Initial commit
