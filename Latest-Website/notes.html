@@ -29,8 +29,8 @@
 			<section id="One" class="wrapper style3">
 				<div class="inner">
 					<header class="align-center">
-						<p></p>
-						<h2></h2>
+						<p>The beauty and elegance of World Wide Web</p>
+						<h2>Final Notes</h2>
 					</header>
 				</div>
 			</section>
@@ -41,14 +41,96 @@
 					<div class="box">
 						<div class="content">
 							<header class="align-center">
-								<p>maecenas sapien feugiat ex purus</p>
-								<h2>Lorem ipsum dolor</h2>
+								<p>WHAT IS</p>
+								<h2>Java Web Servlets & Java Server Pages</h2>
 							</header>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at dignissim augue, in iaculis neque. Etiam bibendum felis ac vulputate pellentesque. Cras non blandit quam. Nunc porta, est non posuere sagittis, neque nunc pellentesque diam, a iaculis lacus urna vitae purus. In non dui vel est tempor faucibus. Aliquam erat volutpat. Quisque vel est vitae nibh laoreet auctor. In nec libero dui. Nulla ullamcorper, dolor nec accumsan viverra, libero eros rutrum metus, vel lacinia magna odio non nunc. Praesent semper felis eu rhoncus aliquam. Donec at quam ac libero vestibulum pretium. Nunc faucibus vel arcu in malesuada. Aenean at velit odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas commodo erat eget molestie sollicitudin. Donec imperdiet, ex sed blandit dictum, ipsum metus ultrices arcu, vitae euismod nisl sapien vitae tortor.</p>
+							<p>Servlets runs in, and is managed by, a web-tier container called the "Servlet Container". Java Server Pages is simply an HTML web page that contains additional bits of code that execute application logic to generate dynamic content. </p>
 
-							<p>Vivamus nec odio ac ligula congue feugiat at vitae leo. Aenean sem justo, finibus sed dui eu, accumsan facilisis dolor. Fusce quis dui eget odio iaculis aliquam vel sed velit. Nulla pellentesque posuere semper. Nulla eu sagittis lorem, a auctor nulla. Sed ac condimentum orci, ac varius ante. Nunc blandit quam sit amet sollicitudin sodales.</p>
+							<p>                   
+	                        <li>Java Object based on the Servlet API</li>
+	                        <li>Web-tier components in the Java EE architecture.</li>
+	                        <li>Runs in, and is managed by, a web-tier container called the "Servlet Container".</li>
+	                        <li>Mapped to URLs to which clients send requests.</li>
 
-							<p>Vivamus ultricies mollis mauris quis molestie. Quisque eu mi velit. In et cursus nibh. Donec facilisis, orci sed mollis hendrerit, nunc risus mattis odio, eget efficitur nisl orci a lectus. Aenean finibus neque convallis orci sollicitudin tincidunt. Vivamus lacinia facilisis diam, quis facilisis nisi luctus nec. Aliquam ac molestie enim, ut ultrices elit. Fusce laoreet vulputate risus in tincidunt. Sed commodo mollis maximus. Nullam varius laoreet nibh sit amet facilisis. Donec ac odio vehicula, consequat elit et, sodales justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ac auctor mauris, in hendrerit libero. </p>
+	                        <li><strong>Typically asked with (among other things)</strong>
+		                        <ul>
+		                        	<li>Processing and/or storing data submitted vial HTML forms.</li>
+		                        	<li>Generating dynamic content</li>
+		                        </ul>
+	                        </li>
+
+
+								<li><strong>javax.servlet</strong>
+		                        <ul>
+		                        	<li>Servlet, GenericServlet</li>
+		                        	<li>ServletRequest, ServletResponse </li>
+		                        	<li>ServletConfig, ServletContext</li>
+		                        	<li>RequestDispatcher</li>
+		                        </ul>
+
+								<li><strong>javax.servlet,http</strong>
+		                        <ul>
+		                        <ul>
+		                        	<li>HttpServlet</li>
+		                        	<li>HttpServletRequest</li>
+		                        	<li>HttpServletResponse</li>
+		                        	<li>HttpSession</li>
+		                        	<li>Cookie</li>
+		                        </ul>
+
+								<li><strong>Servlet Processing</strong>
+		                        <ul>
+		                        <ul>
+		                        	<li>Client sends a request to a web server URL that is mapped to a servlet. Web server passes on the request to the servlet container</li>
+		                        	<li>Servlet container checks if servlet is already loaded</li>
+		                        	<li>If it is not yet loaded, servlet container loads the servlet class and instantiates the servlet, and calls its init method.</li>
+		                        	<li>Servlet container invokes the servlet‟s service method, passing request and response objects as arguments</li>
+		                        	<li>Servlet processes the request using the response object to create the response, which is returned by the servlet container to the web server, which in turn sends the response to the client</li>
+		                        	<li>Subsequent request to the servlet will not require servlet re-instantiation, unless the servlet has been unloaded; before a servlet is unloaded, the servlet container invokes its destroy method.</li>
+		                        </ul>
+	                        </li>
+
+								<li><strong>init(config)</strong>
+		                        <ul>
+	 							<ul>
+		                        	<li>Invoked once on the servlet by the servlet container when the servlet is instantiated; can be used by the servlet for one-time startup initialization</li>
+		                        </ul>
+
+								<li><strong>service(request,response</strong>
+		                        <ul>
+	                        	<ul>
+		                        	<li>Invoked each time the servlet is called upon to process a request (typically on a separate thread for each call)</li>
+		                        	<li>In HttpServlet, the default Service implementation maps the call to a specific doXXX() method (e.g. doGet, doPost) which is typically overridden to affect the servlet‟s functionality</li>
+		                        </ul>
+
+								<li><strong>Destroy()</strong>
+		                        <ul>
+	                        	<ul>
+		                        	<li>Invoked on the servlet by the servlet container when the servlet is to be unloaded (e.g. when the application is stopped or undeployed); can be used by the servlet for clean-up processing (e.g. resource deallocation)</li>
+		                        </ul>
+							</p>
+							</div>
+
+							<div class="content">
+							<header class="align-center">
+								<p>WHAT IS</p>
+								<h2>Personal Home Page</h2>
+							</header>
+							<p>Personal Home Page also known as PHP is a script language and interpreter, similar to JavaScript sand Microsoft's VBScript, that is freely available and used primarily on Linux Web servers. As with ASP, the PHP script is embedded within a webpage along with its HTML. Also, it is the most famous server-side language found on the web. PHP is drafted to pull and edit database info. It is bundled with SQL language databases. It was designed exclusively for the web. It is straightforward in its installation as well as deploying it. Among the number of content-management systems, this is the foundation.</p>
+
+							<p>
+								<li><strong>PHP Global Variables - Superglobals</strong>
+
+								<li>PHP $GLOBALS<br>A PHP super global variable that can access variables that are global from any part in the script, including functions and methods of PHP. These are stored in an array called $GLOBALS[index].</li>
+
+		                        <li>PHP $_SERVER<br>This PHP super global variable holds information, paths, and locations of scripts.</li>
+
+		                        <li>PHP $_REQUEST<br>Gathers data after submitting HTML form. An example is submitting data, sending the specified file in the form of an action attribute tag called “form”. </li>
+
+		                        <li>PHP $_POST<br>An extensively used way to gather form data after sending an HTML form with the method “post”. It is also used to pass variables. </li>
+
+		                        <li>PHP $_GET<br>Used to gather form data after submitting an HTML form with the get method. Sends data to the URL.</li>	
+							</p>
 						</div>
 					</div>
 				</div>
