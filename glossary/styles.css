@@ -1,0 +1,109 @@
+/** IMPORT FONTS HERE **/
+@font-face {
+	font-family: "Lobster Two";
+	src: url('fonts/LobsterTwo-Regular.woff2');
+}
+@font-face {
+	font-family: "Source Sans Pro";
+	src: url('fonts/SourceSansPro-Regular.woff2');
+}
+@font-face {
+	font-family: "Dosis";
+	src: url('fonts/Dosis-ExtraLight.woff2');
+}
+@font-face {
+	font-family: "Dosis-Regular";
+	src: url('fonts/Dosis-Regular.woff2');
+}
+/** end of fonts **/
+
+body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+
+.glossary h1 {
+	text-align: center;
+	display: block;
+	margin-top: 7%;
+	font-family: "Lobster Two";
+}
+
+
+.searchbar input {
+    width: 10%;
+	right: 2%;
+	position: absolute;
+    text-align: left;
+    box-sizing: border-box;
+    border: 2px solid #B8860B;
+    border-radius: 4px;
+    font-size: 15px;
+	font-family: "Dosis-Regular";
+    background-color: white;
+    background-image: url('images/search.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 8px 18px 8px 30px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+.glossary input[type=text]:focus {
+    width: 15%;
+	right: 1%;
+	position: absolute;
+	font-family: "Source Sans Pro";
+}
+.glossarybody h3 {
+	left: 5%;
+	top: 25%;
+	margin-bottom: 10px;
+	position: absolute;
+	font-family: 'Dosis';
+}
+.glossarybody table {
+	position: relative;
+    border-collapse: collapse;
+    width: 90%;
+	margin: 6% 5% 1% 5%;
+}
+
+.glossarybody th {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+	font-family: 'Dosis-Regular';
+}
+.glossarybody td {
+	text-align: left;
+    border-bottom: 1px solid #ddd;
+	font-family: 'Dosis';
+	font-size: 120%;
+}
+
+.glossarybody tr:hover{
+	background-color:#f5f5f5
+}
+
+.glossarybody #terms table {
+	position: absolute;
+    border-collapse: collapse;
+    width: 90%;
+	margin: 1% 5% 7% 5%;
+}
+.glossarybody #terms h3 {
+	left: 5%;
+	margin-top: 3%;
+	position: relative;
+	font-family: 'Lobster Two';
+}
+.arrowup img {
+	position: fixed;
+	right: 0;
+	bottom:1%;
+	height:8%; 
+	width:4%;
+}

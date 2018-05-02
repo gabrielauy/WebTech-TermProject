@@ -4271,6 +4271,61 @@
 			}
 
 		}
+/* About page - This is for the member profile*/
+
+#developers{
+	width:100%;
+	height:auto;
+	margin-top:20px;
+}
+
+img.developer {
+	text-align: center;
+	width: 95%;
+	height: 95%;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.about_container{
+	max-width:300px;
+	height: 270px;
+    width: 100%;
+    margin: 50px;  
+    display:inline-block;	
+	font-family: 'Satisfy', cursive;
+	color:#261a0d;
+}
+
+}
+.about_container h3{
+	font-size: 15px;
+	font-weight: bold;
+	text-align:center;
+}
+
+/*end of member profile*/
+/* Main Content wrapper */
+#wrapper {
+    background-color: #fff;
+    padding: 40px 60px;
+    min-height: 500px;
+}
+
+#wrapper h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#wrapper h2 {
+    margin: 20px 0;
+}
+
+#wrapper li {
+    margin: 2px 0;
+	 text-align:justify;
+	 font-family: 'Quattrocento', serif;
+}
 
 /* Footer */
 
