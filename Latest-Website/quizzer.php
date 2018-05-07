@@ -49,7 +49,7 @@
 						<div class="grid-style">
 							
 								<div class="image fit">
-									<img src="images/image6.jpg" alt="" />
+									<img src="images/character-typing.gif" alt="" />
 								</div>
 									<div class="content">
 										<form method="post" action="quizzer/question.php" class="startquiz">
