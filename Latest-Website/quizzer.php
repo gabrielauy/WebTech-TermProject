@@ -28,7 +28,8 @@
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="notes.html">Notes</a></li>
-					<li><a href="quizzer.html">Quizzer</a></li>
+					<li><a href="quizzer.php">Quizzer</a></li>
+					<li><a href="glossary.html">Glossary</a></li>
 				</ul>
 			</nav>
 
@@ -52,9 +53,9 @@
 									<img src="images/character-typing.gif" alt="" />
 								</div>
 									<div class="content">
+									<center><h1 style ="font-size:200%;"> Select a Topic here </h1></center>
 										<form method="post" action="quizzer/question.php" class="startquiz">
 											<select class="startquiz" id="" name="topic">
-											<option>Select Topic</option>
 											<?php
 												foreach($database->topic as $topic){
 												?>	
