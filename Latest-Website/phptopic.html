@@ -7,6 +7,26 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.progress{
+				position:fixed;
+				z-index: 1;
+				width: 100%;
+			}
+			
+			.progress-container {
+				  width: 100%;
+				  height: 8px;
+				  background: #ccc;
+				  
+			}
+
+			.progress-bar {
+				  height: 8px;
+				  background:#9A7D0A;;
+				  width: 0%;
+			}
+		</style>
 	</head>
 	<body class="subpage">
 
@@ -26,6 +46,12 @@
 					<li><a href="todolist.php">To do list</a></li>
 				</ul>
 			</nav>
+			
+			<div class="progress">
+				<div class="progress-container">
+					<div class="progress-bar" id="myBar"></div>
+				</div>  
+			</div>
 			
 			<section id="two" class="wrapper style2">
 				<div class="inner">
@@ -121,6 +147,17 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// When the user scrolls the page, execute myFunction 
+				window.onscroll = function() {myFunction()};
+
+				function myFunction() {
+				  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+				  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+				  var scrolled = (winScroll / height) * 100;
+				  document.getElementById("myBar").style.width = scrolled + "%";
+				}
+			</script>
 
 	</body>
 </html>

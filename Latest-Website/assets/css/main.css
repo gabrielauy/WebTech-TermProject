@@ -4462,5 +4462,28 @@
 	cursor:pointer;
 }
 
+/*owasp table*/
+
+
+table{
+	width:50%;
+	margin-left:25%;
+}
+
+th{
+	background-color:#9A7D0A;
+}
+
+td{
+	background-color:#FCF3CF;
+}
+
+td:hover{
+	background-color:#9A7D0A;
+	cursor:pointer;
+	color:white;
+}
+
+
 	
 

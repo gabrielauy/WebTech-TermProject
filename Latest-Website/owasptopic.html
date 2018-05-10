@@ -7,6 +7,26 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.progress{
+				position:fixed;
+				z-index: 1;
+				width: 100%;
+			}
+			
+			.progress-container {
+				  width: 100%;
+				  height: 8px;
+				  background: #ccc;
+				  
+			}
+
+			.progress-bar {
+				  height: 8px;
+				  background:#9A7D0A;;
+				  width: 0%;
+			}
+		</style>
 	</head>
 	<body class="subpage">
 
@@ -15,6 +35,8 @@
 				<div class="logo"><a href="index.html">WebTech <span>2018</span></a></div>
 				<a href="#menu">Menu</a>
 			</header>
+			
+			
 
 		<!-- Nav -->
 			<nav id="menu">
@@ -27,6 +49,12 @@
 				</ul>
 			</nav>
 			
+			<div class="progress">
+				<div class="progress-container">
+					<div class="progress-bar" id="myBar"></div>
+				</div>  
+			</div>
+			
 			<section id="two" class="wrapper style2">
 				<div class="inner">
 					<div class="box">
@@ -35,54 +63,57 @@
 								<p>WHAT IS</p>
 								<h2>Open Web Application Security Project</h2>
 							</header>
-							<p>OWASP also known as Open Web Application Security Project is a non-profit organization that promotes to educate people about the risks associated with the most common Web application security vulnerabilities.
-							<h4>The OWASP Top 10 - 2017</h4>
-							<table>
-								<tr>
-									<th>Rank</th>
-									<th>Description</th>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td>Injection</td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td>Broken Authentication</td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td>Sensitive Data Exposure</td>
-								</tr>
-								<tr>
-									<td>4</td>
-									<td>XML External Entities (XXE)</td>
-								</tr>
-								<tr>
-									<td>5</td>
-									<td>Broken Access Control </td>
-								</tr>
-								<tr>
-									<td>6</td>
-									<td>Security Misconfiguration</td>
-								</tr>
-								<tr>
-									<td>7</td>
-									<td>Cross-Site Scripting (XSS)</td>
-								</tr>
-								<tr>
-									<td>8</td>
-									<td>Insecure Deserialization</td>
-								</tr>
-								<tr>
-									<td>9</td>
-									<td>Using Components with Known Vulnerabilities</td>
-								</tr>
-								<tr>
-									<td>10</td>
-									<td>Insufficient Logging&Monitoring</td>
-								</tr>
-							</table>
+							<p style="text-align:center;">OWASP also known as Open Web Application Security Project is a non-profit organization that promotes to educate people about the risks associated with the most common Web application security vulnerabilities.</p>
+								<h4 style="text-align:center; font-size:150%;">The OWASP Top 10 - 2017</h4>
+								<table>
+									<tr>
+										<th>Rank</th>
+										<th>Description</th>
+									</tr>
+									<a href ="#1"><tr></a>
+										<td>1</td>
+										<td>Injection</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Broken Authentication</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Sensitive Data Exposure</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>XML External Entities (XXE)</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>Broken Access Control </td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>Security Misconfiguration</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>Cross-Site Scripting (XSS)</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>Insecure Deserialization</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>Using Components with Known Vulnerabilities</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>Insufficient Logging & Monitoring</td>
+									</tr>
+								</table>
+							<h4 id ="1">No.1 Injection</h4>
+							<p>
+							
 							</p>
 							
 						</div>
@@ -112,6 +143,17 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// When the user scrolls the page, execute myFunction 
+				window.onscroll = function() {myFunction()};
+
+				function myFunction() {
+				  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+				  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+				  var scrolled = (winScroll / height) * 100;
+				  document.getElementById("myBar").style.width = scrolled + "%";
+				}
+			</script>
 
 	</body>
 </html>
