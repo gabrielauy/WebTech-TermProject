@@ -27,9 +27,10 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="notes.html">Notes</a></li>
+					<li><a href="notes.html">Finals</a></li>
 					<li><a href="quizzer.php">Quizzer</a></li>
 					<li><a href="glossary.html">Glossary</a></li>
+					<li><a href="todolist.php">To do list</a></li>
 				</ul>
 			</nav>
 

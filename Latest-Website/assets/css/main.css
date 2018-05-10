@@ -4272,58 +4272,7 @@
 			}
 
 		}
-/* About page - This is for the member profile*/
 
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  transform: scale(1);
-  transition: all 0.40s linear 0s;
-}
-
-.image:hover{
-	transform: scale(1.3);
-    transition:transform 3s linear 0s;
-}
-
-.about_container{
-	max-width:300px;
-	height: 270px;
-    width: 100%; 
-    display:inline-block;	
-	font-family: 'Satisfy', cursive;
-	color:#261a0d;
-	position:relative;
-}
-
-.middle{
-	padding: 40px 20px;
-	top: 10%;
-	opacity:0;
-	position:absolute;
-	text-align:center;
-    transition: all 0.50s ease-in-out;
-}
-
-.about_container:hover .image{
-	opacity:0.3;
-}
-
-.about_container:hover .middle{
-	opacity:1;
-}
-
-.text{
-  color: black;
-  font-size: 16px;
-  padding: 16px 32px;
-  text-align:Center;
-}
-
-/*end of member profile*/
 /* Main Content wrapper */
 #wrapper {
     background-color: #fff;
@@ -4383,7 +4332,7 @@
 
 		}
 
-/*New style of the team members*/
+/*Team members profile*/
 .image-wrapper{
 	width:100%;
 	position:relative;
@@ -4393,9 +4342,10 @@
 .column{
 	width:20%;
 	float:left;
-	height:245px;
+	height:16em;
 	overflow:hidden;
 	position:relative;
+	background-color:red;
 }
 
 .column .imgBx{
@@ -4413,10 +4363,10 @@
 
 .column .details{
 	position:absolute;
-	top:10px;
-	bottom:10px;
-	left:10px;
-	right:10px;
+	top:5%;
+	bottom:5%;
+	left:5%;
+	right:5%;
 	text-align:center;
 	background:#fff;
 	transform:scale(.5);

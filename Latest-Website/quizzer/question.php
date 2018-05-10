@@ -18,7 +18,7 @@ $_SESSION['topic']=$topic;
 
 		<!-- Header -->
 			<header id="header">
-				<div class="logo"><a href="index.html">Webtech <span>2018</span></a></div>
+				<div class="logo"><a href="../index.html">Webtech <span>2018</span></a></div>
 			</header>
 		
 		<!--Body -->
