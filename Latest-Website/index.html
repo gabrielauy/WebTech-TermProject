@@ -120,13 +120,38 @@
 					</div>
 				</div>
 			</section>
+			
+			
+
+			</section>
 		
 		<!-- Two -->
 			<section id="two" class="wrapper style3">
 				<div class="inner">
 					<header class="align-center">
-						<p>Web Systems and Technologies</p>
-						<h2>MAKE THE WEB BEAUTIFUL</h2>
+						<!-- Slideshow container -->
+					<div class="slideshow-container">
+
+					  <!-- Full-width slides/quotes -->
+					  <div class="mySlides">
+						<q>This is the perfect time to go on an adventure and explore!</q>
+						<p class="author">- Jo Montez</p>
+					  </div>
+
+					  <div class="mySlides">
+						<q>Idea is collaboration</q>
+						<p class="author">- Maria Conception Clemente</p>
+					  </div>
+
+					  <div class="mySlides">
+						<q>Design is not just what it looks like & feels like. Design is how it works</q>
+						<p class="author">- Steve Jobs</p>
+					  </div>
+
+					  <!-- Next/prev buttons -->
+					  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
 					</header>
 				</div>
 			</section>
@@ -220,14 +245,10 @@
 								</ul>
 							</div>
 						</div>	
-					</div>
-					
+					</div>	
 				</div>
-  
-			
 				
-
-			</section>
+			
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -242,6 +263,35 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
 	</div>
 	</body>
 </html>
