@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Alex+Brush');
+
+*{
+	margin:0;
+	padding:0;
+}
+
+.load{
+	animation:slide 2s;
+}
+
+.slider{
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position:center;
+	width:100%;
+	height:100%;
+	animation:slide 30s infinite;
+	background-attachment: fixed;
+}
+
+.slider1{
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position:center;
+	width:100%;
+	height:70%;
+	animation:slide 30s infinite;
+	background-attachment: fixed;
+}
+
+.content{
+	color:#fff;
+	width:100%;
+	height:100vh;
+	background-color:rgba(0,0,0,0.5);
+}
+
+.content1{
+	color:#fff;
+	width:100%;
+	height:100vh;
+	background-color:rgba(0,0,0,0.5);
+}
+
+.principal{
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	position:absolute;
+	text-align:center;
+	letter-spacing:5px;
+}
+/*The text inside the image slider (index)*/
+
+
+.principal p{
+	color: white;
+	font-weight:bold;
+	font-family: "Courier";
+	font-size: 45px;
+	margin: 10px 0 30px 10px;
+	white-space: nowrap;
+    overflow:hidden;
+    border-right: .1em solid white;
+    -webkit-animation: typing 5s steps(40, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 5s steps(40, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width:25em }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width:25em }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
+.principal a{
+	text-decoration:none;
+	color:black;
+	border:2px white solid;
+	padding:10px;
+	background-color:white;
+}
+
+.principal a:hover{
+	color:#D4AC0D  ;
+}
+
+@keyframes slide{
+	0%{
+		background-image:url('image3.jpg');
+	}
+	20%{
+		background-image:url('image3.jpg');
+	}
+	20.01%{ 
+		background-image:url('image4.jpg');
+	}
+	40%{
+		background-image:url('image4.jpg');
+	}
+	40.01%{
+		background-image:url('image5.jpg');
+	}
+	60%{
+		background-image:url('image5.jpg');
+	}
+	60.01%{
+		background-image:url('image6.jpg');
+	}
+	80%{
+		background-image:url('image6.jpg');
+	}
+	80.01%{
+		background-image:url('image7.jpg');
+	}
+	100%{
+		background-image:url('image7.jpg');
+	}
+}
+
+footer{
+	height:20%;
+}
+
+footer p{
+	font-family: "Courier";
+	text-align:center;
+	font-size:150%;
+	padding-top:20px;
+}
+
+.container{
+	width:530px;
+	height:350px;
+	text-align:center;
+	margin:0 auto;
+	opacity:0.9;
+	border-radius:10px;
+	margin: 0 auto;
+	background-color:white;
+	background-repeat:no-repeat;
+	background-size: 100%;
+}
+
+.container img{
+	width:150px;
+	height:150px;
+	text-align:center;
+}
+
+.form_input input{
+	height:40px;
+	margin-top:10px;
+	margin-bottom:10px;
+	width:250px;
+	font-size:15px;
+}
+
+.container a{
+	font-size:14px;
+	color:black;
+	font-style: italic;
+	display:block;
+	 text-decoration: underline;
+}
+
+.container button{
+	width:120px;
+	font-size:20px;
+	background-color:#D4AC0D ;
+	border:none;
+	color:white;
+	margin-top:3px;
+	height:30px;
+	border-radius:4px;
+	font-family: "Courier";
+}
+
+.container button:hover{
+	background-color:black;
+	color:#D4AC0D; 
+	cursor:pointer;
+}
+
