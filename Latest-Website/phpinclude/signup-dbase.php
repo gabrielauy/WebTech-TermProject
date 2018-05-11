@@ -28,7 +28,7 @@ if (isset($_POST['submit'])){
 				//Insert user into the database
 				$query = "INSERT INTO students(first_name, last_name, username, password) VALUES ('$firstname', '$lastname', '$username', '$hashedPwd')";
 				if($register->student($query)){
-				$register->url("../signup.php?=signup=success");
+				$register->url("../index.php?=signup=success");
 				exit();
 				}
 			}
