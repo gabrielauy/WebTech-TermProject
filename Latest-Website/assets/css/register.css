@@ -133,17 +133,6 @@
 	}
 }
 
-footer{
-	height:20%;
-}
-
-footer p{
-	font-family: "Courier";
-	text-align:center;
-	font-size:150%;
-	padding-top:20px;
-}
-
 .container{
 	width:530px;
 	height:350px;
