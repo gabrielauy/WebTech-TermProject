@@ -15,7 +15,7 @@ if (isset($_POST['submit'])){
 	
 		}else{
 			//Check if username is already taken. Not yet correct
-			$query = "SELECT * FROM loginsystem WHERE username='$username'";
+			$query = "SELECT * FROM students WHERE username='$username'";
 			$result = mysqli_query($register->conn, $query);
 			$resultcheck = mysqli_num_rows($result);
 			
@@ -26,16 +26,13 @@ if (isset($_POST['submit'])){
 				//Hash password
 				$hashedPwd = password_hash($password, PASSWORD_DEFAULT);
 				//Insert user into the database
-				$query = "INSERT INTO loginsystem (first_name, last_name, username, password) VALUES ('$firstname', '$lastname', '$username', '$hashedPwd')";
-				if($register->loginsystem($query)){
+				$query = "INSERT INTO students(first_name, last_name, username, password) VALUES ('$firstname', '$lastname', '$username', '$hashedPwd')";
+				if($register->student($query)){
 				$register->url("../signup.php?=signup=success");
 				exit();
 				}
 			}
 		}
-	
-	
-	
 }else{
 	$register->url("../signup.php");
 	exit();

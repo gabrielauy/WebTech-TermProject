@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	include 'phpinclude/database.php';
+	$username=$_SESSION['student_id'];
+	$profile = new database;
+	$profile->user_profile($username);
+?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -84,7 +92,6 @@
 			<section id="one" class="wrapper style2">
 				<div class="inner">
 					<div class="grid-style">
-
 						<div>
 							<div class="box">
 								<div class="image fit">
@@ -92,35 +99,23 @@
 								</div>
 								<div class="content">
 									<header class="align-center">
-										<p>OVERVIEW</p>
-										<h2>Java Web Servlets & Java Server Pages</h2>
+										<p>hi <?php echo $username; ?> </p>
+										<h2>Hello <?php 
+											foreach($profile->data as $prof)
+											{ ?>
+												
+													<?php echo $prof['first_name'];?>
+													<?php echo $prof['last_name'];?>
+											<?php } ?> !
+										</h2>
 									</header>
-									<p> Servlets runs in, and is managed by, a web-tier container called the "Servlet Container". Java Server Pages is simply an HTML web page that contains additional bits of code that execute application logic to generate dynamic content. </p>
+									<p>  </p>
 									<footer class="align-center">
-										<a href="notes.html" class="button alt">Learn More</a>
+										<a href="notes.html" class="button alt">Edit profile</a>
 									</footer>
 								</div>
 							</div>
 						</div>
-
-						<div>
-							<div class="box">
-								<div class="image fit">
-									<img src="images/php1.jpg" alt="" />
-								</div>
-								<div class="content">
-									<header class="align-center">
-										<p>OVERVIEW</p>
-										<h2>Hypertext Preprocessor<br>PHP</h2>
-									</header>
-									<p> PHP is a script language and interpreter, similar to JavaScript sand Microsoft's VBScript, that is freely available and used primarily on Linux Web servers. As with ASP, the PHP script is embedded within a webpage along with its HTML.</p>
-									<footer class="align-center">
-										<a href="notes.html" class="button alt">Learn More</a>
-									</footer>
-								</div>
-							</div>
-						</div>
-
 					</div>
 				</div>
 			</section>
@@ -267,35 +262,9 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
+			<script src="assets/js/slide.js"></script>
 
 	</div>
 	</body>
 </html>
+
