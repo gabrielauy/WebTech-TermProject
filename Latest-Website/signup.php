@@ -22,6 +22,7 @@
 						<input type="text" name="lastname" placeholder="Lastname">
 						<input type="text" name="username" placeholder="ID Number">
 						<input type="password" name="password" placeholder="Password">
+						<input type="file" name="img" placeholder="Upload your picture">
 						<button type="submit" name="submit">Sign Up</button>
 					</form>
 			</div>

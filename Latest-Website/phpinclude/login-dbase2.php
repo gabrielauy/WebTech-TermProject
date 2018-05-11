@@ -2,7 +2,6 @@
 
 session_start();
 
-if (isset($_POST['submit'])){
 include 'database.php';
 $register= new database;
 extract($_POST);
@@ -22,21 +21,20 @@ if (empty($username) || empty($password)){
 			exit();
 		}else{
 			if ($row = mysqli_fetch_assoc($result)){
-				if($password == false){
-					$register->url("../login.php?login=error");
+				//De hash Password
+				$hashedPwdCheck = password_verify($password, $row['password']);
+				if($hashedPwdCheck == false){
+					$register->url("../index.php?login=error");
 					exit();
-				}elseif ($password == true){
+				}elseif ($hashedPwdCheck == true){
 					//Login the user here
 					$_SESSION['username'] = $row['username'];
-					$_SESSION['first_name'] = $row['first_name'];
-					$_SESSION['last_name'] = $row['last_name'];
+					$_SESSION['firstname'] = $row['first_name'];
+					$_SESSION['lastname'] = $row['last_name'];
 					$register->url("../home.php");
 					exit();
 				}
 			}	
 		}
 	}
-}else{
-	$register->url("../login.php?login=error");
-}
 

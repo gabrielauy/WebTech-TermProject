@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	include 'phpinclude/database.php';
-	$username=$_SESSION['student_id'];
+	$username=$_SESSION['username'];
 	$profile = new database;
 	$profile->user_profile($username);
 ?>
@@ -20,18 +20,26 @@
 	<div class="mother-container">
 		<!-- Header -->
 			<header id="header" class="alt">
-				<div class="logo"><a href="index.html">WebTech <span>2018</span></a></div>
+				<div class="logo"><a href="home.php">WebTech <span>2018</span></a></div>
 				<a href="#menu">Menu</a>
 			</header>
 
 		<!-- Nav -->
 			<nav id="menu">
+			<h2>Hello <?php 
+						foreach($profile->data as $prof)
+						{ ?>						
+							<?php echo $prof['first_name'];?>
+							<?php echo $prof['last_name'];?>
+							<?php } ?> !
+					</h2>
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="notes.html">Finals</a></li>
+					<li><a href="home.php">Home</a></li>
+					<li><a href="notes.php">Finals</a></li>
 					<li><a href="quizzer.php">Quizzer</a></li>
-					<li><a href="glossary.html">Glossary</a></li>
+					<li><a href="glossary.php">Glossary</a></li>
 					<li><a href="todolist.php">To do list</a></li>
+					<li><a href="forum.php">Forum</a></li>
 					<li><form action = "phpinclude/logout-dbase.php" method="POST">
 										<button type ="submit" name ="submit"> Logout </button>
 										</form></li>
@@ -90,8 +98,10 @@
 
 		<!-- One -->
 			<section id="one" class="wrapper style2">
+					
 				<div class="inner">
 					<div class="grid-style">
+
 						<div>
 							<div class="box">
 								<div class="image fit">
@@ -99,23 +109,35 @@
 								</div>
 								<div class="content">
 									<header class="align-center">
-										<p>hi <?php echo $username; ?> </p>
-										<h2>Hello <?php 
-											foreach($profile->data as $prof)
-											{ ?>
-												
-													<?php echo $prof['first_name'];?>
-													<?php echo $prof['last_name'];?>
-											<?php } ?> !
-										</h2>
+										<p>OVERVIEW</p>
+										<h2>Java Web Servlets & Java Server Pages</h2>
 									</header>
-									<p>  </p>
+									<p> Servlets runs in, and is managed by, a web-tier container called the "Servlet Container". Java Server Pages is simply an HTML web page that contains additional bits of code that execute application logic to generate dynamic content. </p>
 									<footer class="align-center">
-										<a href="notes.html" class="button alt">Edit profile</a>
+										<a href="notes.html" class="button alt">Learn More</a>
 									</footer>
 								</div>
 							</div>
 						</div>
+
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<img src="images/php1.jpg" alt="" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>OVERVIEW</p>
+										<h2>Hypertext Preprocessor<br>PHP</h2>
+									</header>
+									<p> PHP is a script language and interpreter, similar to JavaScript sand Microsoft's VBScript, that is freely available and used primarily on Linux Web servers. As with ASP, the PHP script is embedded within a webpage along with its HTML.</p>
+									<footer class="align-center">
+										<a href="notes.html" class="button alt">Learn More</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</section>
