@@ -21,14 +21,13 @@ class database{
 		header("location:".$url);
 	}
 	
-	public function login($data){
+	public function student($data){
 		$this->conn->query($data);
 		return true;
 	}
 	
-	
 	public function user_profile($username){
-		$query=$this->conn->query("Select * from student where student_id='$username'");
+		$query=$this->conn->query("Select * from students where username='$username'");
 		$row=$query->fetch_array(MYSQLI_ASSOC);
 		if($query->num_rows > 0){
 			$this->data[]=$row;

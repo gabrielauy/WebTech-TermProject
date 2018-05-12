@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	include 'phpinclude/database.php';
+	$username=$_SESSION['username'];
+	$profile = new database;
+	$profile->user_profile($username);
+?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -12,18 +20,26 @@
 	<div class="mother-container">
 		<!-- Header -->
 			<header id="header" class="alt">
-				<div class="logo"><a href="index.html">WebTech <span>2018</span></a></div>
+				<div class="logo"><a href="home.php">WebTech <span>2018</span></a></div>
 				<a href="#menu">Menu</a>
 			</header>
 
 		<!-- Nav -->
 			<nav id="menu">
+			<h2>Hello <?php 
+						foreach($profile->data as $prof)
+						{ ?>						
+							<?php echo $prof['first_name'];?>
+							<?php echo $prof['last_name'];?>
+							<?php } ?> !
+					</h2>
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="notes.html">Finals</a></li>
+					<li><a href="home.php">Home</a></li>
+					<li><a href="notes.php">Finals</a></li>
 					<li><a href="quizzer.php">Quizzer</a></li>
-					<li><a href="glossary.html">Glossary</a></li>
+					<li><a href="glossary.php">Glossary</a></li>
 					<li><a href="todolist.php">To do list</a></li>
+					<li><a href="forum.php">Forum</a></li>
 					<li><form action = "phpinclude/logout-dbase.php" method="POST">
 										<button type ="submit" name ="submit"> Logout </button>
 										</form></li>
@@ -82,6 +98,7 @@
 
 		<!-- One -->
 			<section id="one" class="wrapper style2">
+					
 				<div class="inner">
 					<div class="grid-style">
 
@@ -267,35 +284,9 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
+			<script src="assets/js/slide.js"></script>
 
 	</div>
 	</body>
 </html>
+

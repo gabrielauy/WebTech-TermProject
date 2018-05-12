@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	include 'phpinclude/database.php';
+	$username=$_SESSION['username'];
+	$profile = new database;
+	$profile->user_profile($username);
+?>
+
 <!DOCTYPE HTML>
 <html lang = "en">
     <head>
@@ -11,18 +19,26 @@
 <body>
 <!-- Header -->
 			<header id="header">
-				<div class="logo"><a href="index.html">WebTech <span>2018</span></a></div>
+				<div class="logo"><a href="home.php">WebTech <span>2018</span></a></div>
 				<a href="#menu">Menu</a>
 			</header>
 
 		<!-- Nav -->
 			<nav id="menu">
+			<h2>Hello <?php 
+						foreach($profile->data as $prof)
+						{ ?>						
+							<?php echo $prof['first_name'];?>
+							<?php echo $prof['last_name'];?>
+							<?php } ?> !
+					</h2>
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="notes.html">Finals</a></li>
+					<li><a href="home.php">Home</a></li>
+					<li><a href="notes.php">Finals</a></li>
 					<li><a href="quizzer.php">Quizzer</a></li>
-					<li><a href="glossary.html">Glossary</a></li>
+					<li><a href="glossary.php">Glossary</a></li>
 					<li><a href="todolist.php">To do list</a></li>
+					<li><a href="forum.php">Forum</a></li>
 					<li><form action = "phpinclude/logout-dbase.php" method="POST">
 										<button type ="submit" name ="submit"> Logout </button>
 										</form></li>
