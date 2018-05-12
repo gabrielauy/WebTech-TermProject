@@ -2,10 +2,10 @@
 -- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3308
--- Generation Time: May 12, 2018 at 03:28 AM
+-- Host: 127.0.0.1:3306
+-- Generation Time: May 12, 2018 at 06:50 AM
 -- Server version: 5.7.19
--- PHP Version: 5.6.31
+-- PHP Version: 7.1.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `loginsystem` (
   `username` varchar(256) NOT NULL,
   `password` varchar(256) NOT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `loginsystem`
@@ -45,7 +45,9 @@ CREATE TABLE IF NOT EXISTS `loginsystem` (
 INSERT INTO `loginsystem` (`user_id`, `first_name`, `last_name`, `username`, `password`) VALUES
 (1, 'Albert', 'Lacap', '2155902', '$2y$10$LJXU1bUg7gzmZVtp1wsnz.U/I63wPocx2JsIQralLRDKUAJtRVBJu'),
 (3, 'Daenerys', 'Targaryen', '2123456', '$2y$10$91i7.FZXYeMT8XQbNhjzceq9p/uJMrZsQkuMdWnspzpZ1I9vFarum'),
-(4, 'Cersei', 'Lannister', '2142940', '$2y$10$bdIeUmbOwipHBphI0RqNV..dgdEaHF.KGzymRtvbHhtkvb8B6JCnu');
+(4, 'Cersei', 'Lannister', '2142940', '$2y$10$bdIeUmbOwipHBphI0RqNV..dgdEaHF.KGzymRtvbHhtkvb8B6JCnu'),
+(5, 'lodi', 'petmalu', '21559022', '$2y$10$lpiAmE8PbPkW7QXR/iUC/eY8oXXOd7zGRBzlG5zODg.F.9gCvOLFO'),
+(6, 'Alberto', 'Lacap', '21559023', '$2y$10$H2QNoINoVPDFCxNIdQsqDe8jQMABd.qZToyHiGQxlgkyVrNnr6vFu');
 
 -- --------------------------------------------------------
 
@@ -81,6 +83,29 @@ INSERT INTO `questions` (`question_id`, `question`, `ans1`, `ans2`, `ans3`, `ans
 (9, 'If a servlet is not yet loaded,', 'servlet container loads the servlet class and instantiates the servlet, and calls its init method.', 'servlet container waits for the servlet class to instantiate itself.', 'servlet container will do nothing.', 'servlet container loads the servlet class and instantiates the servlet.', '0', 1),
 (10, 'Servlet processes the request using the ___ to create the response', 'response object', 'request object', 'handler object', 'register object', '0', 1),
 (11, 'Java Server Pages generates', 'dynamic content', 'static content', 'no content', 'none of the above', '0', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `taskform`
+--
+
+DROP TABLE IF EXISTS `taskform`;
+CREATE TABLE IF NOT EXISTS `taskform` (
+  `task_id` int(10) NOT NULL AUTO_INCREMENT,
+  `task` varchar(255) NOT NULL,
+  PRIMARY KEY (`task_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `taskform`
+--
+
+INSERT INTO `taskform` (`task_id`, `task`) VALUES
+(20, 'Exam tomorrow at sir bench in ISP lecture at 10 am'),
+(19, 'Quiz in webtech lecture '),
+(21, 'Do the Laundry later after all of this '),
+(22, 'Sleep to cool off my brain');
 
 -- --------------------------------------------------------
 
