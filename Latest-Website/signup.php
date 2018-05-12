@@ -13,16 +13,16 @@
 
 	<div class="slider">
 		<div class="content">
-			<div class="principal">
+			<div class="sprincipal">
 				<table>
 				<th><p>Study hard now. Be proud later.</P>
 				</th>
 				</table>
 					<form action="phpinclude/signup-dbase.php" method="post">
-						<input type="text" name="firstname" placeholder="Firstname">
-						<input type="text" name="lastname" placeholder="Lastname">
+						<input type="text" name="first_name" placeholder="Firstname">
+						<input type="text" name="last_name" placeholder="Lastname">
 						<input type="text" name="username" placeholder="ID Number">
-						<input type="password" name="password" placeholder="Password">
+						<input type="password" name="password" placeholder="Password"><br>
 						<button type="submit" name="submit">Sign Up</button>
 					</form>
 			</div>

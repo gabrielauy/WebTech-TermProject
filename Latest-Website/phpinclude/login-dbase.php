@@ -14,7 +14,7 @@ if (empty($username) || empty($password)){
 		$register->url("../index.php?login=empty");
 		exit();
 	}else{	
-		$query = "SELECT * FROM students WHERE username = '$username'";
+		$query = "SELECT * FROM loginsystem WHERE username = '$username'";
 		$result = mysqli_query($register->conn, $query);
 		$resultcheck = mysqli_num_rows($result);
 		if ($resultcheck < 1){

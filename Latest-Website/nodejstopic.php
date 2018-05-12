@@ -59,7 +59,7 @@
 					<li><a href="quizzer.php">Quizzer</a></li>
 					<li><a href="glossary.php">Glossary</a></li>
 					<li><a href="todolist.php">To do list</a></li>
-					<li><a href="forum.php">Forum</a></li>
+					<li><a href="classmates.php">Classmates</a></li>
 					<li><form action = "phpinclude/logout-dbase.php" method="POST">
 										<button type ="submit" name ="submit"> Logout </button>
 										</form></li>

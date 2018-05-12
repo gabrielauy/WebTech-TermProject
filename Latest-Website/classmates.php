@@ -4,7 +4,7 @@
 	$username=$_SESSION['username'];
 	$profile = new database;
 	$profile->user_profile($username);
-	
+	$profile->show_users();
 ?>
 
 <!DOCTYPE HTML>
@@ -40,41 +40,36 @@
 					<li><a href="quizzer.php">Quizzer</a></li>
 					<li><a href="glossary.php">Glossary</a></li>
 					<li><a href="todolist.php">To do list</a></li>
-					<li><a href="classmates.php">Classmates</a></li>
+					<li><a href="classmates.php">Forum</a></li>
 					<li><form action = "phpinclude/logout-dbase.php" method="POST">
 										<button type ="submit" name ="submit"> Logout </button>
 										</form></li>
 					
 				</ul>
 			</nav>
-
-		<!-- One -->
-			<section id="One" class="wrapper style3">
-				<div class="inner">
-					<header class="align-center">
-						<p>The beauty and elegance of World Wide Web</p>
-						<h2>Final Notes</h2>
-					</header>
-				</div>
-			</section>
-
-		<!-- Two -->
+			
 			<section id="two" class="wrapper style2">
 				<div class="inner">
 					<div class="box">
 						<div class="content">
-							<div class="top" style="width:100%;">
-								<a href="javatopic.php"><img src ="images/java.jpg" class="topic-class" style="width:30%; margin-left:18%; margin-right:2%; margin-bottom:5%;margin-top:5%;"></a>
-								<a href="phptopic.php"><img src ="images/php.jpg" class="topic-class" style="width:30%; margin-bottom:5%; margin-top:5%;"></a>
-							</div>
-							<div class="below" style="width:100%;">
-								<a href="owasptopic.php"><img src ="images/owasp1.jpg" class="topic-class" style="width:30%; margin-left:18%; margin-right:2%; margin-bottom:5%;"></a>
-								<a href="nodejstopic.php"><img src ="images/js1.jpg" class="topic-class" style="width:30%; margin-bottom:5%;"></a>
-							</div>
+							<h2>Showing Classmates</h2>
+							<hr>
+							<tbody>
+								<?php
+									foreach($profile->show_users as $feed){ ?>
+								<tr>
+								<td><?php echo $feed['first_name'];?></td>
+								<td><?php echo $feed['last_name'];?></td><br>
+								</tr>
+							</tbody>
+						<?php } ?>
+		</table>
 						</div>
 					</div>
 				</div>
 			</section>
+			
+			
 			
 			<footer id="footer">
 				<div class="copyright">

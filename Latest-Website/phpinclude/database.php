@@ -1,8 +1,8 @@
 <?php
 class database{
-	public $host="localhost:3308";
+	public $host="localhost:3306";
 	public $username="root";
-	public $pass="root";
+	public $pass="";
 	public $db_name="finals";
 	public $conn;
 	public $topic;
@@ -21,13 +21,13 @@ class database{
 		header("location:".$url);
 	}
 	
-	public function student($data){
+	public function signup($data){
 		$this->conn->query($data);
 		return true;
 	}
 	
 	public function user_profile($username){
-		$query=$this->conn->query("Select * from students where username='$username'");
+		$query=$this->conn->query("Select * from loginsystem where username='$username'");
 		$row=$query->fetch_array(MYSQLI_ASSOC);
 		if($query->num_rows > 0){
 			$this->data[]=$row;
@@ -80,6 +80,14 @@ class database{
 		$array['wrong']=$wrong;
 		$array['no_answer']=$no_answer;
 		return $array;
+	}
+	
+	public function show_users(){
+		$query=$this->conn->query("Select * from loginsystem ORDER BY 1 ASC");
+		while($row=$query->fetch_array(MYSQLI_ASSOC)){
+			$this->show_users[]=$row;
+		}
+		return $this->show_users;
 	}
 }
 	

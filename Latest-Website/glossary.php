@@ -12,6 +12,7 @@
         <title>Glossary of Terms</title>
 		    <meta charset="utf-8">
 		    <meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="icon" href="images/Logo.png">
  		    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		    <link rel="stylesheet" media="screen" href="assets/css/styles.css" />
 		    <script src="assets/js/search.js"></script>
@@ -38,7 +39,7 @@
 					<li><a href="quizzer.php">Quizzer</a></li>
 					<li><a href="glossary.php">Glossary</a></li>
 					<li><a href="todolist.php">To do list</a></li>
-					<li><a href="forum.php">Forum</a></li>
+					<li><a href="classmates.php">Classmates</a></li>
 					<li><form action = "phpinclude/logout-dbase.php" method="POST">
 										<button type ="submit" name ="submit"> Logout </button>
 										</form></li>
@@ -570,12 +571,7 @@ allows users/developers to make use of the features of the browsers. </td>
 	 </div>
 	 </div>
 	 
-	 	<!-- Footer -->
-			<footer id="footer">
-				<div class="copyright">
-					&copy; WebTech 9331A. All rights reserved.
-				</div>
-			</footer>
+	 
 	 
 	 <script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>

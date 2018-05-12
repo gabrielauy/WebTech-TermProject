@@ -15,6 +15,66 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<style>
+		/* Modal Content */
+		.modal-content {
+			background-color: black;
+			margin: auto;
+			padding: 20px;
+			border: 4px solid #9A7D0A;
+			width: 80%;
+		}
+		
+		.modalDialog {
+				position: absolute;
+				font-family: Arial, Helvetica, sans-serif;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				top: 0;
+				overflow: auto;
+				background: rgba(0,0,0,0.8);
+				z-index: 99999;
+				opacity:0;
+				-webkit-transition: opacity 400ms ease-in;
+				-moz-transition: opacity 400ms ease-in;
+				transition: opacity 400ms ease-in;
+				pointer-events: none;
+			}
+
+			.modalDialog:target {
+				opacity:1;
+				pointer-events: auto;
+			}
+
+			.modalDialog > div {
+				width: 80%; /* Full width */
+				height: 60%;
+				position: relative;
+				margin: 10% auto;
+				padding: 5px 20px 13px 20px;
+				border-radius: 10px;
+				background-color: black;
+			}
+
+			.close {
+				color: #cc0000;
+				float: right;
+				font-size: 28px;
+				font-weight: bold;
+				border: 2px solid red;
+				padding: 6px;
+				border-radius: 22px;
+			}
+			.close:hover,
+			.close:focus {
+
+			text-decoration: none;
+			cursor: pointer;
+			}		
+		</style>
 	</head>
 	<body class="subpage">
 
@@ -41,7 +101,7 @@
 					<li><a href="quizzer.php">Quizzer</a></li>
 					<li><a href="glossary.php">Glossary</a></li>
 					<li><a href="todolist.php">To do list</a></li>
-					<li><a href="forum.php">Forum</a></li>
+					<li><a href="classmates.php">Classmates</a></li>
 					<li><form action = "phpinclude/logout-dbase.php" method="POST">
 										<button type ="submit" name ="submit"> Logout </button>
 										</form></li>
@@ -73,7 +133,7 @@
 
 									<tr>
 										<td>1</td>
-										<td><a href="#openModal1" style="color: black;">Injection</a><td>
+										<td><a href="#openModal1" style="color: black;">Injection</a></td>
 
 <div id="openModal1" class="modalDialog">
 <div class="modal-content">
@@ -92,7 +152,7 @@
 
 									<tr>
 										<td>2</td>
-										<td><a href="#openModal2" style="color: black;">Broken Authentication</a><td>
+										<td><a href="#openModal2" style="color: black;">Broken Authentication</a></td>
 
 <div id="openModal2" class="modalDialog">
 <div class="modal-content">
@@ -111,7 +171,7 @@
 
 									<tr>
 										<td>3</td>
-										<td><a href="#openModal3" style="color: black;">Sensitive Data Exposure</a><td>
+										<td><a href="#openModal3" style="color: black;">Sensitive Data Exposure</a></td>
 
 <div id="openModal3" class="modalDialog">
 <div class="modal-content">
@@ -132,7 +192,7 @@
 
 									<tr>
 										<td>4</td>
-										<td><a href="#openModal4" style="color: black;">XML External Entities (XXE)</a><td>
+										<td><a href="#openModal4" style="color: black;">XML External Entities (XXE)</a></td>
 
 <div id="openModal4" class="modalDialog">
 <div class="modal-content">
@@ -144,7 +204,7 @@
 
 									<tr>
 										<td>5</td>
-										<td><a href="#openModal5" style="color: black;">Broken Access Control</a><td>
+										<td><a href="#openModal5" style="color: black;">Broken Access Control</a></td>
 
 <div id="openModal5" class="modalDialog">
 <div class="modal-content">
@@ -161,7 +221,7 @@
 
 									<tr>
 										<td>6</td>
-										<td><a href="#openModal6" style="color: black;">Security Misconfiguration</a><td>
+										<td><a href="#openModal6" style="color: black;">Security Misconfiguration</a></td>
 
 <div id="openModal6" class="modalDialog">
 <div class="modal-content">
@@ -180,7 +240,7 @@
 
 									<tr>
 										<td>7</td>
-										<td><a href="#openModal7" style="color: black;">Cross-Site Scripting (XSS)</a><td>
+										<td><a href="#openModal7" style="color: black;">Cross-Site Scripting (XSS)</a></td>
 
 <div id="openModal7" class="modalDialog">
 <div class="modal-content">
@@ -199,7 +259,7 @@
 
 									<tr>
 										<td>8</td>
-										<td><a href="#openModal8" style="color: black;">Insecure Deserialization</a><td>
+										<td><a href="#openModal8" style="color: black;">Insecure Deserialization</a></td>
 
 <div id="openModal8" class="modalDialog">
 <div class="modal-content">
@@ -211,7 +271,7 @@
 
 									<tr>
 										<td>9</td>
-										<td><a href="#openModal9" style="color: black;">Using Components with Known Vulnerabilities</a><td>
+										<td><a href="#openModal9" style="color: black;">Using Components with Known Vulnerabilities</a></td>
 
 <div id="openModal9" class="modalDialog">
 <div class="modal-content">
@@ -224,7 +284,7 @@
 
 									<tr>
 										<td>10</td>
-										<td><a href="#openModal10" style="color: black;">Insufficient Logging & Monitoring</a><td>
+										<td><a href="#openModal10" style="color: black;">Insufficient Logging & Monitoring</a></td>
 
 <div id="openModal10" class="modalDialog">
 <div class="modal-content">
@@ -259,66 +319,7 @@
 				}
 			</script>
 
-<style>
-/* Modal Content */
-.modal-content {
-    background-color: black;
-    margin: auto;
-    padding: 20px;
-    border: 4px solid #9A7D0A;
-    width: 80%;
-}
-.modalDialog {
-        position: absolute;
-        font-family: Arial, Helvetica, sans-serif;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        top: 0;
-        overflow: auto;
-        background: rgba(0,0,0,0.8);
-        z-index: 99999;
-        opacity:0;
-        -webkit-transition: opacity 400ms ease-in;
-        -moz-transition: opacity 400ms ease-in;
-        transition: opacity 400ms ease-in;
-        pointer-events: none;
-    }
 
-    .modalDialog:target {
-        opacity:1;
-        pointer-events: auto;
-    }
-
-    .modalDialog > div {
-        width: 80%; /* Full width */
-    	height: 60%;
-        position: relative;
-        margin: 10% auto;
-        padding: 5px 20px 13px 20px;
-        border-radius: 10px;
-        background-color: black;
-    }
-
-    .close {
-	    color: #cc0000;
-	    float: right;
-	    font-size: 28px;
-	    font-weight: bold;
-	    border: 2px solid red;
-	    padding: 6px;
-	    border-radius: 22px;
-    }
-    .close:hover,
-	.close:focus {
-
-    text-decoration: none;
-    cursor: pointer;
-	}
-
-    
-</style>
 
 	</body>
 </html>

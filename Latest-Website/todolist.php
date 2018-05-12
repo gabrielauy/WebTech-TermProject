@@ -1,4 +1,13 @@
 <!DOCTYPE HTML>
+<?php
+  session_start();
+  include 'phpinclude/database.php';
+  $database = new database;
+  $database->topic_show();
+  $username=$_SESSION['username'];
+  $profile = new database;
+  $profile->user_profile($username);
+?>
 
 <?php 
     // initialize errors variable
@@ -30,6 +39,8 @@
 ?>
 
 
+
+
 <html>
   <head>
     <title>WebTech 2018</title>
@@ -37,7 +48,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
   <body class="subpage">
 
@@ -49,11 +59,20 @@
 
     <!-- Nav -->
       <nav id="menu">
+        <div class="inner">
+        <h2 style="color:grey">Hello <?php 
+            foreach($profile->data as $prof)
+            { ?>            
+              <?php echo $prof['first_name'];?>
+              <?php echo $prof['last_name'];?>
+              <?php } ?> !
+          </h2>
+        </div>
         <ul class="links">
           <li><a href="home.php">Home</a></li>
-          <li><a href="notes.html">Finals</a></li>
+          <li><a href="notes.php">Finals</a></li>
           <li><a href="quizzer.php">Quizzer</a></li>
-          <li><a href="glossary.html">Glossary</a></li>
+          <li><a href="glossary.php">Glossary</a></li>
           <li><a href="todolist.php">To do list</a></li>
           <li><form action = "phpinclude/logout-dbase.php" method="POST">
                     <button type ="submit" name ="submit"> Logout </button>
@@ -66,7 +85,8 @@
       <section id="One" class="wrapper style3">
         <div class="inner">
           <header class="align-center">
-            <h2>TO DO LIST</h2>
+            <p>Check out your</p>
+            <h2>To do list</h2>
           </header>
         </div>
       </section>
@@ -83,8 +103,10 @@
                 if (isset($errors)) { ?>
                     <p><?php echo $errors; ?> </p>
                  <?php } ?>
-                <input type="text" name="task" row="5" class="form-group">
+                  <section id="One" class="wrapper style5">
+                <input type="text" name="task" row="5" class="form-group"><br>
                 <button type="submit" class="btn btn-primary" name="submit">Add Task</button>
+              </section>
               </form>
       
             </div>

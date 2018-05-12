@@ -9,13 +9,13 @@ if (isset($_POST['submit'])){
 	
 	//Error handlers
 	//Check for empty fields
-	if(empty($firstname) || empty($lastname) || empty($username) || empty($password)){
+	if(empty($first_name) || empty($last_name) || empty($username) || empty($password)){
 		$register->url("../signup.php?signup=empty");
 		exit();
 	
 		}else{
 			//Check if username is already taken. Not yet correct
-			$query = "SELECT * FROM students WHERE username='$username'";
+			$query = "SELECT * FROM loginsystem WHERE username='$username'";
 			$result = mysqli_query($register->conn, $query);
 			$resultcheck = mysqli_num_rows($result);
 			
@@ -26,8 +26,8 @@ if (isset($_POST['submit'])){
 				//Hash password
 				$hashedPwd = password_hash($password, PASSWORD_DEFAULT);
 				//Insert user into the database
-				$query = "INSERT INTO students(first_name, last_name, username, password) VALUES ('$firstname', '$lastname', '$username', '$hashedPwd')";
-				if($register->student($query)){
+				$query = "INSERT INTO loginsystem(first_name, last_name, username, password) VALUES ('$first_name', '$last_name', '$username', '$hashedPwd')";
+				if($register->signup($query)){
 				$register->url("../index.php?=signup=success");
 				exit();
 				}
@@ -37,7 +37,3 @@ if (isset($_POST['submit'])){
 	$register->url("../signup.php");
 	exit();
 }
-
-
-
-

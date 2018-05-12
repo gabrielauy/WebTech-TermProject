@@ -32,12 +32,11 @@
 	text-align:center;
 	letter-spacing:3px;
 	background-color:white;
-	height:auto;
-	border-radius:10px;
+	height:50%;
+	border-radius:5px;
 	padding:10px;
+	box-shadow: 5px 10px grey;
 }
-/*The text inside the image slider (index)*/
-
 
 .principal table p{
 	color:white;
@@ -48,7 +47,7 @@
 .principal table{
 	background-color:#cc9900;
 	width:100%;
-	height:30%;
+	height:10%;
 	border-radius:10px;
 	padding:8px;
 	margin-bottom:2%;
@@ -60,7 +59,7 @@
     border-style:solid;
 	width:70%;
 	position:block;
-	height:20%;
+	height:15%;
 	padding:5px;
 	margin-bottom:4%;
 	font-family: "Courier";
@@ -85,11 +84,73 @@
 }
 
 .principal a{
-	color: #1a1300;
-	font-style: italic;
+	color:black;
+	font-style: bold italic;
 	font-family: "Courier";
 }
 
 .principal a:hover{
 	color:#cc9900;
 }
+
+.sprincipal{
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	position:absolute;
+	text-align:center;
+	letter-spacing:3px;
+	background-color:#cc9900;
+	height:55%;
+	border-radius:5px;
+	padding:10px;
+	width:30%;
+	box-shadow: 5px 10px #80734d;
+}
+
+.sprincipal table p{
+	color:#cc9900;
+	font-size:120%;
+	font-family: "Courier";
+}
+
+.sprincipal table{
+	background-color:white;
+	width:100%;
+	height:10%;
+	border-radius:10px;
+	padding:8px;
+	margin-bottom:2%;
+}
+
+.sprincipal input{
+	border-color:#cc9900;
+	border-width:2px;  
+    border-style:solid;
+	width:80%;
+	position:block;
+	height:15%;
+	padding:5px;
+	margin-bottom:3%;
+	font-family: "Courier";
+}
+
+.sprincipal button{
+	width:30%;
+	height:15%;
+	background-color:#332600;
+	font-size:100%;
+	padding:3px;
+	letter-spacing:5px;
+	cursor:pointer;
+	color:white;
+	border-radius:2px;
+	font-family: "Courier";
+}
+
+.sprincipal button:hover{
+	background-color:#cc9900;
+	color:white;
+}
+
+

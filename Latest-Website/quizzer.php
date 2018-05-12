@@ -16,6 +16,7 @@
 		<title>Webtech 2018</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="images/Logo.png">
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="subpage">
@@ -41,7 +42,7 @@
 					<li><a href="quizzer.php">Quizzer</a></li>
 					<li><a href="glossary.php">Glossary</a></li>
 					<li><a href="todolist.php">To do list</a></li>
-					<li><a href="forum.php">Forum</a></li>
+					<li><a href="classmates.php">Classmates</a></li>
 					<li><form action = "phpinclude/logout-dbase.php" method="POST">
 										<button type ="submit" name ="submit"> Logout </button>
 										</form></li>
@@ -70,7 +71,7 @@
 								</div>
 									<div class="content">
 									<center><h1 style ="font-size:200%;"> Select a Topic here </h1></center>
-										<form method="post" action="quizzer/question.php" class="startquiz">
+										<form method="post" action="phpinclude/question.php" class="startquiz">
 											<select class="startquiz" id="" name="topic">
 											<?php
 												foreach($database->topic as $topic){

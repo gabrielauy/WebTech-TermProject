@@ -39,7 +39,7 @@
 					<li><a href="quizzer.php">Quizzer</a></li>
 					<li><a href="glossary.php">Glossary</a></li>
 					<li><a href="todolist.php">To do list</a></li>
-					<li><a href="forum.php">Forum</a></li>
+					<li><a href="classmates.php">Classmates</a></li>
 					<li><form action = "phpinclude/logout-dbase.php" method="POST">
 										<button type ="submit" name ="submit"> Logout </button>
 										</form></li>
@@ -114,7 +114,7 @@
 									</header>
 									<p> Servlets runs in, and is managed by, a web-tier container called the "Servlet Container". Java Server Pages is simply an HTML web page that contains additional bits of code that execute application logic to generate dynamic content. </p>
 									<footer class="align-center">
-										<a href="notes.html" class="button alt">Learn More</a>
+										<a href="javatopic.php" class="button alt">Learn More</a>
 									</footer>
 								</div>
 							</div>
@@ -132,7 +132,44 @@
 									</header>
 									<p> PHP is a script language and interpreter, similar to JavaScript sand Microsoft's VBScript, that is freely available and used primarily on Linux Web servers. As with ASP, the PHP script is embedded within a webpage along with its HTML.</p>
 									<footer class="align-center">
-										<a href="notes.html" class="button alt">Learn More</a>
+										<a href="phptopic.php" class="button alt">Learn More</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+						
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<img src="images/owasp.jpg" alt="" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>OVERVIEW</p>
+										<h2>Open Web Application Security Project</h2>
+									</header>
+									<p> OWASP also known as Open Web Application Security Project is a non-profit organization that promotes to educate people about the risks associated with the most common Web application security vulnerabilities. </p>
+									<footer class="align-center">
+										<a href="owasptopic.php" class="button alt">Learn More</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+						
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<img src="images/nodejs.png" alt="" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>OVERVIEW</p>
+										<h2>Server Side JavaScript
+WITH 										with NODE JS</h2>
+									</header>
+									<p>  Node.js is a server side JavaScript built on Google Chrome's V8 JavaScript engine. It is an open source programming language that was developed by Ryan Dahl in 2009. It is written in C and the non-blocking I/O model. </p>
+									<footer class="align-center">
+										<a href="nodejstopic.php" class="button alt">Learn More</a>
 									</footer>
 								</div>
 							</div>
@@ -210,7 +247,7 @@
 						</div>
 						<div class="details">
 							<div class="content">
-								<h1>Angelica Grabanzor<br><span>Designer</span></h1>
+								<h1>Angelica Grabanzor<br><span>Developer</span></h1>
 								<ul>
 									<li><a href="#" class="icon fa-twitter" ></a></li>
 									<li><a href="https://web.facebook.com/aeiagrbnzr" class="icon fa-facebook"></a></li>
